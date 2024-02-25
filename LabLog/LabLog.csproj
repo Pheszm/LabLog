@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{30B30B8D-0D20-4A13-9E01-11343D219181}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LabLog</RootNamespace>
+    <AssemblyName>LabLog</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\AddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddStudent.Designer.cs">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditingStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditingStudent.Designer.cs">
+      <DependentUpon>EditingStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditStudents.Designer.cs">
+      <DependentUpon>EditStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RemoveStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RemoveStudent.Designer.cs">
+      <DependentUpon>RemoveStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubjectAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubjectAdd.Designer.cs">
+      <DependentUpon>SubjectAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubjectEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubjectEdit.Designer.cs">
+      <DependentUpon>SubjectEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubjectEditing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubjectEditing.Designer.cs">
+      <DependentUpon>SubjectEditing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubjectRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubjectRemove.Designer.cs">
+      <DependentUpon>SubjectRemove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\DownloadReportsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\DownloadReportsPanel.Designer.cs">
+      <DependentUpon>DownloadReportsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\InstructorSignIn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\InstructorSignIn.Designer.cs">
+      <DependentUpon>InstructorSignIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\InstructorsMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\InstructorsMenu.Designer.cs">
+      <DependentUpon>InstructorsMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\IntroductionPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\IntroductionPanel.Designer.cs">
+      <DependentUpon>IntroductionPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\StudentListPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\StudentListPanel.Designer.cs">
+      <DependentUpon>StudentListPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\StudentSignIn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\StudentSignIn.Designer.cs">
+      <DependentUpon>StudentSignIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\SubjectListPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\SubjectListPanel.Designer.cs">
+      <DependentUpon>SubjectListPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TheMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TheMainForm.Designer.cs">
+      <DependentUpon>TheMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AddStudent.resx">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditingStudent.resx">
+      <DependentUpon>EditingStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditStudents.resx">
+      <DependentUpon>EditStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RemoveStudent.resx">
+      <DependentUpon>RemoveStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubjectAdd.resx">
+      <DependentUpon>SubjectAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubjectEdit.resx">
+      <DependentUpon>SubjectEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubjectEditing.resx">
+      <DependentUpon>SubjectEditing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubjectRemove.resx">
+      <DependentUpon>SubjectRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\DownloadReportsPanel.resx">
+      <DependentUpon>DownloadReportsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\InstructorSignIn.resx">
+      <DependentUpon>InstructorSignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\InstructorsMenu.resx">
+      <DependentUpon>InstructorsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\IntroductionPanel.resx">
+      <DependentUpon>IntroductionPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\StudentListPanel.resx">
+      <DependentUpon>StudentListPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\StudentSignIn.resx">
+      <DependentUpon>StudentSignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\SubjectListPanel.resx">
+      <DependentUpon>SubjectListPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TheMainForm.resx">
+      <DependentUpon>TheMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Person_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LabLog_Header.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Return_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UnView_Password_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\View_Password_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StudentsLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Subject_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout_Icon _White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Return_Logo_White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Remove_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file-import.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file-export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download_Logo_Black.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
