@@ -1,7 +1,7 @@
 # LabLog
  Our final Project for Integrative Programming and Technologies
 
- Title: Lab=Log
+ Title: Lab-Log
 (Attendance Management System)
 
  Members:
