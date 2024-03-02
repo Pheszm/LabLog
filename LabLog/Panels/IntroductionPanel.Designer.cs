@@ -51,7 +51,7 @@
             this.InstructorLogin.BackColor = System.Drawing.Color.White;
             this.InstructorLogin.FlatAppearance.BorderSize = 0;
             this.InstructorLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.InstructorLogin.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InstructorLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.InstructorLogin.ForeColor = System.Drawing.Color.Black;
             this.InstructorLogin.Image = global::LabLog.Properties.Resources.Settings_Logo;
             this.InstructorLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -70,7 +70,7 @@
             this.StudentLogin.BackColor = System.Drawing.Color.White;
             this.StudentLogin.FlatAppearance.BorderSize = 0;
             this.StudentLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.StudentLogin.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudentLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StudentLogin.ForeColor = System.Drawing.Color.Black;
             this.StudentLogin.Image = global::LabLog.Properties.Resources.Person_Logo;
             this.StudentLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;

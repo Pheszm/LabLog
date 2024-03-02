@@ -41,8 +41,8 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Arial", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(58, 9);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(50, 11);
+            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(300, 55);
             this.label7.TabIndex = 53;
@@ -54,8 +54,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(34, 91);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(14, 90);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(131, 20);
             this.label4.TabIndex = 52;
@@ -65,14 +64,14 @@
             // SubjectComboBox
             // 
             this.SubjectComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.SubjectComboBox.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.SubjectComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.SubjectComboBox.FormattingEnabled = true;
             this.SubjectComboBox.Items.AddRange(new object[] {
             "Available Subject"});
-            this.SubjectComboBox.Location = new System.Drawing.Point(169, 88);
-            this.SubjectComboBox.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.SubjectComboBox.Location = new System.Drawing.Point(151, 87);
+            this.SubjectComboBox.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.SubjectComboBox.Name = "SubjectComboBox";
-            this.SubjectComboBox.Size = new System.Drawing.Size(230, 28);
+            this.SubjectComboBox.Size = new System.Drawing.Size(210, 28);
             this.SubjectComboBox.TabIndex = 54;
             this.SubjectComboBox.SelectedIndexChanged += new System.EventHandler(this.SubjectComboBox_SelectedIndexChanged);
             // 
@@ -81,14 +80,14 @@
             this.Edit.BackColor = System.Drawing.Color.White;
             this.Edit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
             this.Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Edit.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Edit.ForeColor = System.Drawing.Color.Black;
             this.Edit.Image = global::LabLog.Properties.Resources.Edit_Logo;
             this.Edit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Edit.Location = new System.Drawing.Point(169, 142);
-            this.Edit.Margin = new System.Windows.Forms.Padding(2);
+            this.Edit.Location = new System.Drawing.Point(158, 134);
+            this.Edit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Edit.Name = "Edit";
-            this.Edit.Size = new System.Drawing.Size(81, 32);
+            this.Edit.Size = new System.Drawing.Size(73, 36);
             this.Edit.TabIndex = 55;
             this.Edit.Text = "Edit";
             this.Edit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -97,19 +96,22 @@
             // 
             // SubjectEdit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
-            this.ClientSize = new System.Drawing.Size(429, 205);
+            this.ClientSize = new System.Drawing.Size(397, 192);
             this.Controls.Add(this.Edit);
             this.Controls.Add(this.SubjectComboBox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label4);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SubjectEdit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SubjectEdit";
+            this.Load += new System.EventHandler(this.SubjectEdit_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

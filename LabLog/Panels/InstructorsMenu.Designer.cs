@@ -58,7 +58,7 @@
             this.DownloadReportsButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
             this.DownloadReportsButton.FlatAppearance.BorderSize = 0;
             this.DownloadReportsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DownloadReportsButton.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DownloadReportsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.DownloadReportsButton.ForeColor = System.Drawing.Color.White;
             this.DownloadReportsButton.Image = global::LabLog.Properties.Resources.Download_Logo;
             this.DownloadReportsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -77,7 +77,7 @@
             this.SubjectListButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
             this.SubjectListButton.FlatAppearance.BorderSize = 0;
             this.SubjectListButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SubjectListButton.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubjectListButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.SubjectListButton.ForeColor = System.Drawing.Color.White;
             this.SubjectListButton.Image = global::LabLog.Properties.Resources.Subject_Logo;
             this.SubjectListButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -96,7 +96,7 @@
             this.StudentListButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
             this.StudentListButton.FlatAppearance.BorderSize = 0;
             this.StudentListButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.StudentListButton.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudentListButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.StudentListButton.ForeColor = System.Drawing.Color.White;
             this.StudentListButton.Image = global::LabLog.Properties.Resources.StudentsLogo;
             this.StudentListButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -115,7 +115,7 @@
             this.HomeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
             this.HomeButton.FlatAppearance.BorderSize = 0;
             this.HomeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HomeButton.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HomeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.HomeButton.ForeColor = System.Drawing.Color.White;
             this.HomeButton.Image = global::LabLog.Properties.Resources.Home_Logo;
             this.HomeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -132,7 +132,7 @@
             this.LogoutButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
             this.LogoutButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
             this.LogoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LogoutButton.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogoutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.LogoutButton.ForeColor = System.Drawing.Color.White;
             this.LogoutButton.Image = global::LabLog.Properties.Resources.Logout_Icon__White;
             this.LogoutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -151,10 +151,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::LabLog.Properties.Resources.LabLog_Header;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(415, 42);
+            this.pictureBox1.Location = new System.Drawing.Point(402, 42);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(376, 148);
+            this.pictureBox1.Size = new System.Drawing.Size(389, 161);
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
             // 

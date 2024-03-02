@@ -62,7 +62,7 @@
             this.ReturnButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
             this.ReturnButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
             this.ReturnButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ReturnButton.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReturnButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.ReturnButton.ForeColor = System.Drawing.Color.White;
             this.ReturnButton.Image = global::LabLog.Properties.Resources.Return_Logo_White;
             this.ReturnButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -91,7 +91,7 @@
             // StudentID
             // 
             this.StudentID.BackColor = System.Drawing.Color.White;
-            this.StudentID.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudentID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StudentID.Location = new System.Drawing.Point(603, 136);
             this.StudentID.Name = "StudentID";
             this.StudentID.Size = new System.Drawing.Size(289, 29);
@@ -102,7 +102,7 @@
             // 
             this.Purpose.BackColor = System.Drawing.Color.White;
             this.Purpose.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Purpose.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Purpose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Purpose.FormattingEnabled = true;
             this.Purpose.Items.AddRange(new object[] {
             "Available Subject",
@@ -130,7 +130,7 @@
             // Reasonn
             // 
             this.Reasonn.BackColor = System.Drawing.Color.White;
-            this.Reasonn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.Reasonn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.Reasonn.Location = new System.Drawing.Point(172, 62);
             this.Reasonn.Multiline = true;
             this.Reasonn.Name = "Reasonn";
@@ -143,7 +143,7 @@
             // 
             this.Timeout.CustomFormat = "hh:mm tt";
             this.Timeout.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.Timeout.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.Timeout.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.Timeout.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.Timeout.Location = new System.Drawing.Point(172, 14);
             this.Timeout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -157,12 +157,12 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
             this.label4.Location = new System.Drawing.Point(92, 62);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 23);
+            this.label4.Size = new System.Drawing.Size(68, 17);
             this.label4.TabIndex = 17;
             this.label4.Text = "Reason:";
             // 
@@ -170,12 +170,12 @@
             // 
             this.Ste.AutoSize = true;
             this.Ste.BackColor = System.Drawing.Color.Transparent;
-            this.Ste.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ste.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.Ste.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
-            this.Ste.Location = new System.Drawing.Point(4, 14);
+            this.Ste.Location = new System.Drawing.Point(6, 24);
             this.Ste.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Ste.Name = "Ste";
-            this.Ste.Size = new System.Drawing.Size(161, 23);
+            this.Ste.Size = new System.Drawing.Size(153, 17);
             this.Ste.TabIndex = 15;
             this.Ste.Text = "Estimated Time-out:";
             // 
@@ -183,12 +183,12 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
-            this.label2.Location = new System.Drawing.Point(517, 184);
+            this.label2.Location = new System.Drawing.Point(515, 190);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 23);
+            this.label2.Size = new System.Drawing.Size(73, 17);
             this.label2.TabIndex = 17;
             this.label2.Text = "Purpose:";
             // 
@@ -196,12 +196,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
-            this.label1.Location = new System.Drawing.Point(503, 142);
+            this.label1.Location = new System.Drawing.Point(499, 145);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 23);
+            this.label1.Size = new System.Drawing.Size(89, 17);
             this.label1.TabIndex = 16;
             this.label1.Text = "Student ID:";
             // 
@@ -223,7 +223,7 @@
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Image = global::LabLog.Properties.Resources.Person_Logo;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;

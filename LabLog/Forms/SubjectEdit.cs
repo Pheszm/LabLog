@@ -33,5 +33,10 @@ namespace LabLog.Forms
             this.Close();
             edit.ShowDialog();
         }
+
+        private void SubjectEdit_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

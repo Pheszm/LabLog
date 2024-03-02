@@ -41,8 +41,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(38, 96);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(33, 92);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(102, 20);
             this.label4.TabIndex = 43;
@@ -50,12 +49,13 @@
             // 
             // StudentID
             // 
-            this.StudentID.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StudentID.Location = new System.Drawing.Point(144, 93);
-            this.StudentID.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.StudentID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudentID.Location = new System.Drawing.Point(135, 88);
+            this.StudentID.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.StudentID.Name = "StudentID";
-            this.StudentID.Size = new System.Drawing.Size(245, 26);
+            this.StudentID.Size = new System.Drawing.Size(261, 26);
             this.StudentID.TabIndex = 42;
+            this.StudentID.TextChanged += new System.EventHandler(this.StudentID_TextChanged);
             // 
             // label7
             // 
@@ -63,8 +63,8 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Arial", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(13, 9);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(20, 11);
+            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(403, 55);
             this.label7.TabIndex = 41;
@@ -75,31 +75,34 @@
             this.RemoveButton.BackColor = System.Drawing.Color.White;
             this.RemoveButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
             this.RemoveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RemoveButton.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RemoveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.RemoveButton.ForeColor = System.Drawing.Color.Black;
             this.RemoveButton.Image = global::LabLog.Properties.Resources.Remove_Logo;
             this.RemoveButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RemoveButton.Location = new System.Drawing.Point(172, 155);
-            this.RemoveButton.Margin = new System.Windows.Forms.Padding(2);
+            this.RemoveButton.Location = new System.Drawing.Point(173, 131);
+            this.RemoveButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.RemoveButton.Name = "RemoveButton";
-            this.RemoveButton.Size = new System.Drawing.Size(100, 32);
+            this.RemoveButton.Size = new System.Drawing.Size(99, 31);
             this.RemoveButton.TabIndex = 44;
             this.RemoveButton.Text = "Remove";
             this.RemoveButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.RemoveButton.UseVisualStyleBackColor = false;
+            this.RemoveButton.Click += new System.EventHandler(this.RemoveButton_Click);
             // 
             // RemoveStudent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
-            this.ClientSize = new System.Drawing.Size(434, 217);
+            this.ClientSize = new System.Drawing.Size(437, 187);
             this.Controls.Add(this.RemoveButton);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.StudentID);
             this.Controls.Add(this.label7);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "RemoveStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RemoveStudent";

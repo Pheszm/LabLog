@@ -16,5 +16,15 @@ namespace LabLog.Forms
         {
             InitializeComponent();
         }
+
+        private void RemoveButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StudentID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

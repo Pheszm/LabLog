@@ -41,7 +41,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Arial", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(53, 9);
+            this.label7.Location = new System.Drawing.Point(14, 9);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(376, 55);
@@ -54,7 +54,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(64, 89);
+            this.label4.Location = new System.Drawing.Point(25, 89);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 20);
@@ -63,11 +63,11 @@
             // 
             // StudentID
             // 
-            this.StudentID.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StudentID.Location = new System.Drawing.Point(143, 86);
+            this.StudentID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudentID.Location = new System.Drawing.Point(108, 86);
             this.StudentID.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.StudentID.Name = "StudentID";
-            this.StudentID.Size = new System.Drawing.Size(276, 26);
+            this.StudentID.Size = new System.Drawing.Size(236, 26);
             this.StudentID.TabIndex = 51;
             // 
             // Edit
@@ -75,11 +75,11 @@
             this.Edit.BackColor = System.Drawing.Color.White;
             this.Edit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
             this.Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Edit.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.Edit.ForeColor = System.Drawing.Color.Black;
             this.Edit.Image = global::LabLog.Properties.Resources.Edit_Logo;
             this.Edit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Edit.Location = new System.Drawing.Point(203, 144);
+            this.Edit.Location = new System.Drawing.Point(154, 128);
             this.Edit.Margin = new System.Windows.Forms.Padding(2);
             this.Edit.Name = "Edit";
             this.Edit.Size = new System.Drawing.Size(81, 32);
@@ -87,13 +87,14 @@
             this.Edit.Text = "Save";
             this.Edit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Edit.UseVisualStyleBackColor = false;
+            this.Edit.Click += new System.EventHandler(this.Edit_Click);
             // 
             // SubjectEditing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
-            this.ClientSize = new System.Drawing.Size(488, 210);
+            this.ClientSize = new System.Drawing.Size(405, 186);
             this.Controls.Add(this.Edit);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label4);
