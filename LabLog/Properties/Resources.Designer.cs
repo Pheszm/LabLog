@@ -133,6 +133,16 @@ namespace LabLog.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Introduction_Wallaper {
+            get {
+                object obj = ResourceManager.GetObject("Introduction_Wallaper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LabLog_Header {
             get {
                 object obj = ResourceManager.GetObject("LabLog_Header", resourceCulture);

@@ -272,5 +272,8 @@
   <ItemGroup>
     <None Include="Resources\Download_Logo_Black.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Introduction_Wallaper.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
