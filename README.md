@@ -7,4 +7,4 @@
  Members:
  - Carl Wyne S. Gallardo
  - Razel Mae P. Del Puerto
- - Marly Shan Penales
+ - Marly Shan Penales   
