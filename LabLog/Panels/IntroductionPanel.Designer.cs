@@ -39,9 +39,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::LabLog.Properties.Resources.LabLog_Header;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(477, 171);
+            this.pictureBox1.Location = new System.Drawing.Point(318, 111);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(564, 228);
+            this.pictureBox1.Size = new System.Drawing.Size(376, 148);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
@@ -54,9 +55,10 @@
             this.InstructorLogin.ForeColor = System.Drawing.Color.Black;
             this.InstructorLogin.Image = global::LabLog.Properties.Resources.Settings_Logo;
             this.InstructorLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.InstructorLogin.Location = new System.Drawing.Point(648, 712);
+            this.InstructorLogin.Location = new System.Drawing.Point(432, 463);
+            this.InstructorLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.InstructorLogin.Name = "InstructorLogin";
-            this.InstructorLogin.Size = new System.Drawing.Size(210, 49);
+            this.InstructorLogin.Size = new System.Drawing.Size(140, 32);
             this.InstructorLogin.TabIndex = 3;
             this.InstructorLogin.Text = "INSTRUCTOR";
             this.InstructorLogin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -72,9 +74,10 @@
             this.StudentLogin.ForeColor = System.Drawing.Color.Black;
             this.StudentLogin.Image = global::LabLog.Properties.Resources.Person_Logo;
             this.StudentLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.StudentLogin.Location = new System.Drawing.Point(672, 628);
+            this.StudentLogin.Location = new System.Drawing.Point(448, 408);
+            this.StudentLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.StudentLogin.Name = "StudentLogin";
-            this.StudentLogin.Size = new System.Drawing.Size(160, 49);
+            this.StudentLogin.Size = new System.Drawing.Size(107, 32);
             this.StudentLogin.TabIndex = 2;
             this.StudentLogin.Text = "STUDENT";
             this.StudentLogin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -83,7 +86,7 @@
             // 
             // IntroductionPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
             this.BackgroundImage = global::LabLog.Properties.Resources.Introduction_Wallaper;
@@ -92,8 +95,9 @@
             this.Controls.Add(this.InstructorLogin);
             this.Controls.Add(this.StudentLogin);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "IntroductionPanel";
-            this.Size = new System.Drawing.Size(1480, 977);
+            this.Size = new System.Drawing.Size(987, 635);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
