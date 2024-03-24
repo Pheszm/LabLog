@@ -54,7 +54,7 @@
             this.dateTimePicker2.CustomFormat = "dd/MM/yy";
             this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(668, 268);
+            this.dateTimePicker2.Location = new System.Drawing.Point(668, 314);
             this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(103, 23);
@@ -66,7 +66,7 @@
             this.dateTimePicker1.CustomFormat = "dd/MM/yy";
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(491, 268);
+            this.dateTimePicker1.Location = new System.Drawing.Point(491, 314);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(103, 23);
@@ -78,7 +78,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
-            this.label3.Location = new System.Drawing.Point(620, 269);
+            this.label3.Location = new System.Drawing.Point(620, 315);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 17);
@@ -91,7 +91,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
-            this.label2.Location = new System.Drawing.Point(436, 269);
+            this.label2.Location = new System.Drawing.Point(436, 315);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 17);
@@ -104,7 +104,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
-            this.label1.Location = new System.Drawing.Point(570, 214);
+            this.label1.Location = new System.Drawing.Point(570, 277);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 25);
@@ -227,7 +227,7 @@
             this.AddButton.ForeColor = System.Drawing.Color.Black;
             this.AddButton.Image = global::LabLog.Properties.Resources.Download_Logo_Black;
             this.AddButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AddButton.Location = new System.Drawing.Point(378, 358);
+            this.AddButton.Location = new System.Drawing.Point(378, 404);
             this.AddButton.Margin = new System.Windows.Forms.Padding(2);
             this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(110, 32);
@@ -257,7 +257,7 @@
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Image = global::LabLog.Properties.Resources.Download_Logo_Black;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(496, 358);
+            this.button1.Location = new System.Drawing.Point(496, 404);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 32);
@@ -275,7 +275,7 @@
             this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.Image = global::LabLog.Properties.Resources.Download_Logo_Black;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(614, 358);
+            this.button2.Location = new System.Drawing.Point(614, 404);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(110, 32);
@@ -293,7 +293,7 @@
             this.button3.ForeColor = System.Drawing.Color.Black;
             this.button3.Image = global::LabLog.Properties.Resources.Download_Logo_Black;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(732, 358);
+            this.button3.Location = new System.Drawing.Point(732, 404);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(110, 32);
