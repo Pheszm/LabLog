@@ -98,3 +98,29 @@ C:\Users\SRCB-IT-ADMIN\Desktop\DeleteMeLater\LabLog\LabLog\obj\Debug\LabLog.cspr
 C:\Users\SRCB-IT-ADMIN\Desktop\DeleteMeLater\LabLog\LabLog\obj\Debug\LabLog.csproj.CoreCompileInputs.cache
 C:\Users\SRCB-IT-ADMIN\Desktop\DeleteMeLater\LabLog\LabLog\obj\Debug\LabLog.exe
 C:\Users\SRCB-IT-ADMIN\Desktop\DeleteMeLater\LabLog\LabLog\obj\Debug\LabLog.pdb
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\LabLog.exe.config
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\LabLog.exe
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\LabLog.pdb
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.csproj.AssemblyReference.cache
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Forms.AddStudent.resources
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Forms.EditingStudent.resources
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Forms.EditStudents.resources
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Forms.RemoveStudent.resources
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Forms.SubjectAdd.resources
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Forms.SubjectEdit.resources
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Forms.SubjectEditing.resources
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Forms.SubjectRemove.resources
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Panels.DownloadReportsPanel.resources
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Panels.InstructorSignIn.resources
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Panels.InstructorsMenu.resources
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Panels.IntroductionPanel.resources
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Panels.LogbookAreaForStaff.resources
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Panels.StudentListPanel.resources
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Panels.StudentSignIn.resources
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Panels.SubjectListPanel.resources
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Properties.Resources.resources
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.TheMainForm.resources
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.csproj.GenerateResource.cache
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.csproj.CoreCompileInputs.cache
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.exe
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.pdb

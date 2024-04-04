@@ -24,17 +24,16 @@ namespace LabLog.Panels
             this.Controls.Add(Intro);
         }
 
-        private void Purpose_SelectedIndexChanged(object sender, EventArgs e)
+
+        private void WhosLogin_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(Purpose.Text == "Others")
+            MessageBox.Show("HEHEHE");
+            if (WhosLogin.Text == "Student")
             {
-                OthersPanel.Visible = true;
-            }
-            else
-            {
-                OthersPanel.Visible = false;
+                Panels.LogbookAreaForStaff staff = new Panels.LogbookAreaForStaff();
+                panel2.Controls.Clear();
+                panel2.Controls.Add(staff);
             }
         }
-
     }
 }

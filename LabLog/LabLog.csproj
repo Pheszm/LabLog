@@ -118,6 +118,12 @@
     <Compile Include="Panels\IntroductionPanel.Designer.cs">
       <DependentUpon>IntroductionPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Panels\LogbookAreaForStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\LogbookAreaForStaff.Designer.cs">
+      <DependentUpon>LogbookAreaForStaff.cs</DependentUpon>
+    </Compile>
     <Compile Include="Panels\StudentListPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -184,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\IntroductionPanel.resx">
       <DependentUpon>IntroductionPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\LogbookAreaForStaff.resx">
+      <DependentUpon>LogbookAreaForStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\StudentListPanel.resx">
       <DependentUpon>StudentListPanel.cs</DependentUpon>
