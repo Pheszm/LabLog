@@ -15,6 +15,7 @@ namespace LabLog.Panels
         public StudentSignIn()
         {
             InitializeComponent();
+            starter();
         }
 
         private void ReturnButton_Click(object sender, EventArgs e)
@@ -27,13 +28,27 @@ namespace LabLog.Panels
 
         private void WhosLogin_SelectedIndexChanged(object sender, EventArgs e)
         {
-            MessageBox.Show("HEHEHE");
-            if (WhosLogin.Text == "Student")
+            if (WhosLogin.Text == "Staff")
             {
                 Panels.LogbookAreaForStaff staff = new Panels.LogbookAreaForStaff();
                 panel2.Controls.Clear();
                 panel2.Controls.Add(staff);
             }
+
+            if (WhosLogin.Text == "Student")
+            {
+                Panels.LogbookAreaForStudent student = new Panels.LogbookAreaForStudent();
+                panel2.Controls.Clear();
+                panel2.Controls.Add(student);
+            }
+        }
+
+        void starter()
+        {
+            WhosLogin.Text = "Student";
+            Panels.LogbookAreaForStudent student = new Panels.LogbookAreaForStudent();
+            panel2.Controls.Clear();
+            panel2.Controls.Add(student);
         }
     }
 }

@@ -17,16 +17,5 @@ namespace LabLog.Panels
             InitializeComponent();
         }
 
-        private void Purpose_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if(Purpose.Text == "Others")
-            {
-                OthersPanel.Visible = true;
-            }
-            else
-            {
-                OthersPanel.Visible = false;
-            }
-        }
     }
 }

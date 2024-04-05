@@ -96,8 +96,7 @@
             this.WhosLogin.FormattingEnabled = true;
             this.WhosLogin.Items.AddRange(new object[] {
             "Staff",
-            "Student",
-            "Others"});
+            "Student"});
             this.WhosLogin.Location = new System.Drawing.Point(523, 26);
             this.WhosLogin.Margin = new System.Windows.Forms.Padding(4);
             this.WhosLogin.Name = "WhosLogin";

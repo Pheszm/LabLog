@@ -124,3 +124,4 @@ C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.csproj
 C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.csproj.CoreCompileInputs.cache
 C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.exe
 C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.pdb
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Panels.LogbookAreaForStudent.resources
