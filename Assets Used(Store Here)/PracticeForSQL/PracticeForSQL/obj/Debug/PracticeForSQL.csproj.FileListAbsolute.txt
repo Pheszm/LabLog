@@ -1,0 +1,88 @@
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\PracticeForSQL.exe.config
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\PracticeForSQL.exe
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\PracticeForSQL.pdb
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\Google.Protobuf.dll
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\MySql.Data.dll
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\System.Buffers.dll
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\System.IO.Pipelines.dll
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\System.Memory.dll
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\ZstdSharp.dll
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\Google.Protobuf.pdb
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\Google.Protobuf.xml
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\MySql.Data.xml
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\System.Buffers.xml
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\System.IO.Pipelines.xml
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\System.Memory.xml
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\obj\Debug\PracticeForSQL.csproj.AssemblyReference.cache
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\obj\Debug\PracticeForSQL.Form1.resources
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\obj\Debug\PracticeForSQL.Properties.Resources.resources
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\obj\Debug\PracticeForSQL.csproj.GenerateResource.cache
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\obj\Debug\PracticeForSQL.csproj.CoreCompileInputs.cache
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\obj\Debug\Practice.22294CAE.Up2Date
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\obj\Debug\PracticeForSQL.exe
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\obj\Debug\PracticeForSQL.pdb
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\obj\Debug\PracticeForSQL.AddForm.resources
+C:\Users\razel\Desktop\GitHub Repositories\PracticeForSQL\PracticeForSQL\obj\Debug\PracticeForSQL.UpdateForm.resources
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\PracticeForSQL.exe.config
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\PracticeForSQL.exe
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\PracticeForSQL.pdb
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\Google.Protobuf.dll
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\MySql.Data.dll
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\System.Buffers.dll
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\System.IO.Pipelines.dll
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\System.Memory.dll
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\ZstdSharp.dll
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\Google.Protobuf.pdb
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\Google.Protobuf.xml
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\MySql.Data.xml
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\System.Buffers.xml
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\System.IO.Pipelines.xml
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\System.Memory.xml
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\obj\Debug\PracticeForSQL.csproj.AssemblyReference.cache
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\obj\Debug\PracticeForSQL.AddForm.resources
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\obj\Debug\PracticeForSQL.Form1.resources
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\obj\Debug\PracticeForSQL.Properties.Resources.resources
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\obj\Debug\PracticeForSQL.UpdateForm.resources
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\obj\Debug\PracticeForSQL.csproj.GenerateResource.cache
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\obj\Debug\PracticeForSQL.csproj.CoreCompileInputs.cache
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\obj\Debug\Practice.22294CAE.Up2Date
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\obj\Debug\PracticeForSQL.exe
+C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\Assets Used(Store Here)\PracticeForSQL\PracticeForSQL\obj\Debug\PracticeForSQL.pdb

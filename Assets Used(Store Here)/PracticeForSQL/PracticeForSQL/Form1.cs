@@ -13,7 +13,7 @@ namespace PracticeForSQL
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show($"Are you sure you want to delete {SelectName} from the record?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show($"Are you sure you want to delete '{SelectName}' from the record?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
                 using (MySqlConnection con = new MySqlConnection(consstring))
@@ -69,7 +69,7 @@ namespace PracticeForSQL
                         reader["Course"].ToString(),
                         reader["YearLevel"].ToString(),
                         reader["Gender"].ToString()
-                    ); ;
+                    ); 
                 }
                 reader.Close();
             }
