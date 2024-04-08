@@ -1,87 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\razel\\Desktop\\GitHub Repositories\\LabLog\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{30B30B8D-0D20-4A13-9E01-11343D219181}|LabLog\\LabLog.csproj|c:\\users\\razel\\desktop\\github repositories\\lablog\\lablog\\panels\\studentlistpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{30B30B8D-0D20-4A13-9E01-11343D219181}|LabLog\\LabLog.csproj|solutionrelative:lablog\\panels\\studentlistpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{30B30B8D-0D20-4A13-9E01-11343D219181}|LabLog\\LabLog.csproj|c:\\users\\razel\\desktop\\github repositories\\lablog\\lablog\\panels\\studentsignin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{30B30B8D-0D20-4A13-9E01-11343D219181}|LabLog\\LabLog.csproj|solutionrelative:lablog\\panels\\studentsignin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{30B30B8D-0D20-4A13-9E01-11343D219181}|LabLog\\LabLog.csproj|C:\\Users\\razel\\Desktop\\GitHub Repositories\\LabLog\\lablog\\panels\\logbookareaforstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{30B30B8D-0D20-4A13-9E01-11343D219181}|LabLog\\LabLog.csproj|solutionrelative:lablog\\panels\\logbookareaforstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{30B30B8D-0D20-4A13-9E01-11343D219181}|LabLog\\LabLog.csproj|C:\\Users\\razel\\Desktop\\GitHub Repositories\\LabLog\\lablog\\panels\\logbookareaforstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30B30B8D-0D20-4A13-9E01-11343D219181}|LabLog\\LabLog.csproj|solutionrelative:lablog\\panels\\logbookareaforstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\DOSTX-Admin\\OneDrive - DOST-REGIONAL OFFICE X\\Desktop\\Carls Respo\\LabLog\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StudentListPanel.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\razel\\Desktop\\GitHub Repositories\\LabLog\\LabLog\\Panels\\StudentListPanel.cs",
-              "RelativeDocumentMoniker": "LabLog\\Panels\\StudentListPanel.cs",
-              "ToolTip": "C:\\Users\\razel\\Desktop\\GitHub Repositories\\LabLog\\LabLog\\Panels\\StudentListPanel.cs [Design]",
-              "RelativeToolTip": "LabLog\\Panels\\StudentListPanel.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T06:22:12.456Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LogbookAreaForStudent.cs",
-              "DocumentMoniker": "C:\\Users\\razel\\Desktop\\GitHub Repositories\\LabLog\\LabLog\\Panels\\LogbookAreaForStudent.cs",
-              "RelativeDocumentMoniker": "LabLog\\Panels\\LogbookAreaForStudent.cs",
-              "ToolTip": "C:\\Users\\razel\\Desktop\\GitHub Repositories\\LabLog\\LabLog\\Panels\\LogbookAreaForStudent.cs",
-              "RelativeToolTip": "LabLog\\Panels\\LogbookAreaForStudent.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAjwBsAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T05:19:39.155Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LogbookAreaForStudent.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\razel\\Desktop\\GitHub Repositories\\LabLog\\LabLog\\Panels\\LogbookAreaForStudent.cs",
-              "RelativeDocumentMoniker": "LabLog\\Panels\\LogbookAreaForStudent.cs",
-              "ToolTip": "C:\\Users\\razel\\Desktop\\GitHub Repositories\\LabLog\\LabLog\\Panels\\LogbookAreaForStudent.cs [Design]",
-              "RelativeToolTip": "LabLog\\Panels\\LogbookAreaForStudent.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T05:19:35.661Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StudentSignIn.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\razel\\Desktop\\GitHub Repositories\\LabLog\\LabLog\\Panels\\StudentSignIn.cs",
-              "RelativeDocumentMoniker": "LabLog\\Panels\\StudentSignIn.cs",
-              "ToolTip": "C:\\Users\\razel\\Desktop\\GitHub Repositories\\LabLog\\LabLog\\Panels\\StudentSignIn.cs [Design]",
-              "RelativeToolTip": "LabLog\\Panels\\StudentSignIn.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T08:55:52.481Z",
-              "EditorCaption": " [Design]"
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

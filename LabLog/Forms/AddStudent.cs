@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,47 @@ namespace LabLog.Forms
         public AddStudent()
         {
             InitializeComponent();
+            LoadCourses();
+        }
+
+        string consstring = Program.MainServerDataBase;
+
+
+        private void LoadCourses()
+        {
+            using (MySqlConnection conn = new MySqlConnection(consstring))
+            {
+                conn.Open();
+                string query = "SELECT course FROM courselist";
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    string courseName = reader.GetString(0);
+                    CourseComboBox.Items.Add(courseName);
+                }
+
+                reader.Close();
+            }
+        }
+
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            using (MySqlConnection con = new MySqlConnection(consstring))
+            {
+                con.Open();
+                string sql = "INSERT INTO studentlist (StudentID, StudentName, Course, YearLevel, Gender) VALUES (@StudentID, @StudentName, @Course, @YearLevel, @Gender)";
+                MySqlCommand cmd = new MySqlCommand(sql, con);
+                cmd.Parameters.AddWithValue("@StudentID", StudentID.Text);
+                cmd.Parameters.AddWithValue("@StudentName", $"{FirstName.Text} {MiddleInitialComboBox.Text}. {LastName.Text}");
+                cmd.Parameters.AddWithValue("@Course", CourseComboBox.Text);
+                cmd.Parameters.AddWithValue("@YearLevel", YearLevel.Text);
+                cmd.Parameters.AddWithValue("@Gender", GenderComboBox.Text);
+                cmd.ExecuteNonQuery();
+            }
+            this.Close();
         }
     }
 }
+
