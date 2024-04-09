@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\razel\\Desktop\\GitHub Repositories\\LabLog\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{30B30B8D-0D20-4A13-9E01-11343D219181}|LabLog\\LabLog.csproj|c:\\users\\razel\\desktop\\github repositories\\lablog\\lablog\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30B30B8D-0D20-4A13-9E01-11343D219181}|LabLog\\LabLog.csproj|solutionrelative:lablog\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{30B30B8D-0D20-4A13-9E01-11343D219181}|LabLog\\LabLog.csproj|c:\\users\\razel\\desktop\\github repositories\\lablog\\lablog\\panels\\instructorsignin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{30B30B8D-0D20-4A13-9E01-11343D219181}|LabLog\\LabLog.csproj|solutionrelative:lablog\\panels\\instructorsignin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,7 +38,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\razel\\Desktop\\GitHub Repositories\\LabLog\\LabLog\\Program.cs",
+              "RelativeDocumentMoniker": "LabLog\\Program.cs",
+              "ToolTip": "C:\\Users\\razel\\Desktop\\GitHub Repositories\\LabLog\\LabLog\\Program.cs",
+              "RelativeToolTip": "LabLog\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T07:13:12.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "SubjectListPanel.cs",
               "DocumentMoniker": "C:\\Users\\razel\\Desktop\\GitHub Repositories\\LabLog\\LabLog\\Panels\\SubjectListPanel.cs",
               "RelativeDocumentMoniker": "LabLog\\Panels\\SubjectListPanel.cs",
@@ -46,7 +63,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "InstructorSignIn.cs",
               "DocumentMoniker": "C:\\Users\\razel\\Desktop\\GitHub Repositories\\LabLog\\LabLog\\Panels\\InstructorSignIn.cs",
               "RelativeDocumentMoniker": "LabLog\\Panels\\InstructorSignIn.cs",
@@ -59,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "InstructorSignIn.cs [Design]",
               "DocumentMoniker": "C:\\Users\\razel\\Desktop\\GitHub Repositories\\LabLog\\LabLog\\Panels\\InstructorSignIn.cs",
               "RelativeDocumentMoniker": "LabLog\\Panels\\InstructorSignIn.cs",
@@ -70,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "SubjectListPanel.cs [Design]",
               "DocumentMoniker": "C:\\Users\\razel\\Desktop\\GitHub Repositories\\LabLog\\LabLog\\Panels\\SubjectListPanel.cs",
               "RelativeDocumentMoniker": "LabLog\\Panels\\SubjectListPanel.cs",
