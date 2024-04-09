@@ -104,12 +104,8 @@ C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\LabLog.pdb
 C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.csproj.AssemblyReference.cache
 C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Forms.AddStudent.resources
 C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Forms.EditingStudent.resources
-C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Forms.EditStudents.resources
-C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Forms.RemoveStudent.resources
 C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Forms.SubjectAdd.resources
-C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Forms.SubjectEdit.resources
 C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Forms.SubjectEditing.resources
-C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Forms.SubjectRemove.resources
 C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Panels.DownloadReportsPanel.resources
 C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Panels.InstructorSignIn.resources
 C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.Panels.InstructorsMenu.resources
@@ -180,3 +176,35 @@ C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLo
 C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\LabLog\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\LabLog\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\LabLog\obj\Debug\LabLog.csproj.Up2Date
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\Google.Protobuf.dll
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\MySql.Data.dll
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\System.Buffers.dll
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\System.IO.Pipelines.dll
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\System.Memory.dll
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\ZstdSharp.dll
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\Google.Protobuf.pdb
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\Google.Protobuf.xml
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\MySql.Data.xml
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\System.Buffers.xml
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\System.IO.Pipelines.xml
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\System.Memory.xml
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\razel\Desktop\GitHub Repositories\LabLog\LabLog\obj\Debug\LabLog.csproj.Up2Date
