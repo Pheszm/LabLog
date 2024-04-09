@@ -57,14 +57,12 @@ namespace LabLog.Panels
 
         private void RemoveButton_Click(object sender, EventArgs e)
         {
-            Forms.SubjectRemove remove = new Forms.SubjectRemove();
-            remove.ShowDialog();
+
         }
 
         private void Edit_Click(object sender, EventArgs e)
         {
-            Forms.SubjectEdit edit = new Forms.SubjectEdit();
-            edit.ShowDialog();
+
         }
     }
 }

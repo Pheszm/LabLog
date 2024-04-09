@@ -132,9 +132,7 @@ C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLo
 C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\LabLog\obj\Debug\LabLog.Forms.AddStudent.resources
 C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\LabLog\obj\Debug\LabLog.Forms.EditingStudent.resources
 C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\LabLog\obj\Debug\LabLog.Forms.SubjectAdd.resources
-C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\LabLog\obj\Debug\LabLog.Forms.SubjectEdit.resources
 C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\LabLog\obj\Debug\LabLog.Forms.SubjectEditing.resources
-C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\LabLog\obj\Debug\LabLog.Forms.SubjectRemove.resources
 C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\LabLog\obj\Debug\LabLog.Panels.DownloadReportsPanel.resources
 C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\LabLog\obj\Debug\LabLog.Panels.InstructorSignIn.resources
 C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\LabLog\obj\Debug\LabLog.Panels.InstructorsMenu.resources

@@ -116,23 +116,11 @@
     <Compile Include="Forms\SubjectAdd.Designer.cs">
       <DependentUpon>SubjectAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SubjectEdit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\SubjectEdit.Designer.cs">
-      <DependentUpon>SubjectEdit.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\SubjectEditing.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\SubjectEditing.Designer.cs">
       <DependentUpon>SubjectEditing.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\SubjectRemove.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\SubjectRemove.Designer.cs">
-      <DependentUpon>SubjectRemove.cs</DependentUpon>
     </Compile>
     <Compile Include="Panels\DownloadReportsPanel.cs">
       <SubType>UserControl</SubType>
@@ -210,14 +198,8 @@
     <EmbeddedResource Include="Forms\SubjectAdd.resx">
       <DependentUpon>SubjectAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SubjectEdit.resx">
-      <DependentUpon>SubjectEdit.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\SubjectEditing.resx">
       <DependentUpon>SubjectEditing.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SubjectRemove.resx">
-      <DependentUpon>SubjectRemove.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\DownloadReportsPanel.resx">
       <DependentUpon>DownloadReportsPanel.cs</DependentUpon>

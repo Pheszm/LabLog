@@ -34,3 +34,13 @@ MySql.Data.MySqlClient.MySqlException: 'Authentication to host 'localhost' for u
 SELECT user, host FROM mysql.user;
 
 ALTER USER 'root'@'localhost' IDENTIFIED BY '123456';
+
+
+
+#To give Access for Remoting the Database
+CREATE USER 'root'@'%' IDENTIFIED BY '123456';
+
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+
+FLUSH PRIVILEGES;
+
