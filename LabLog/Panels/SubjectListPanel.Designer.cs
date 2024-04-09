@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.DownloadReportsButton = new System.Windows.Forms.Button();
             this.SubjectListButton = new System.Windows.Forms.Button();
             this.StudentListButton = new System.Windows.Forms.Button();
             this.HomeButton = new System.Windows.Forms.Button();
             this.LogoutButton = new System.Windows.Forms.Button();
-            this.ExportListButton = new System.Windows.Forms.Button();
-            this.ImportListButton = new System.Windows.Forms.Button();
-            this.Edit = new System.Windows.Forms.Button();
+            this.EditButton = new System.Windows.Forms.Button();
             this.RemoveButton = new System.Windows.Forms.Button();
             this.AddButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.DataGrid = new System.Windows.Forms.DataGridView();
-            this.StuNameTable = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SearchBox = new System.Windows.Forms.TextBox();
+            this.Subjects = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).BeginInit();
@@ -58,7 +58,7 @@
             this.panel1.Controls.Add(this.HomeButton);
             this.panel1.Controls.Add(this.LogoutButton);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(263, 790);
             this.panel1.TabIndex = 4;
@@ -157,60 +157,25 @@
             this.LogoutButton.UseVisualStyleBackColor = false;
             this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
-            // ExportListButton
+            // EditButton
             // 
-            this.ExportListButton.BackColor = System.Drawing.Color.White;
-            this.ExportListButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
-            this.ExportListButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ExportListButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.ExportListButton.ForeColor = System.Drawing.Color.Black;
-            this.ExportListButton.Image = global::LabLog.Properties.Resources.file_export;
-            this.ExportListButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ExportListButton.Location = new System.Drawing.Point(819, 602);
-            this.ExportListButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ExportListButton.Name = "ExportListButton";
-            this.ExportListButton.Size = new System.Drawing.Size(176, 39);
-            this.ExportListButton.TabIndex = 33;
-            this.ExportListButton.Text = "Export List";
-            this.ExportListButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ExportListButton.UseVisualStyleBackColor = false;
-            // 
-            // ImportListButton
-            // 
-            this.ImportListButton.BackColor = System.Drawing.Color.White;
-            this.ImportListButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
-            this.ImportListButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ImportListButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.ImportListButton.ForeColor = System.Drawing.Color.Black;
-            this.ImportListButton.Image = global::LabLog.Properties.Resources.file_import;
-            this.ImportListButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ImportListButton.Location = new System.Drawing.Point(621, 602);
-            this.ImportListButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ImportListButton.Name = "ImportListButton";
-            this.ImportListButton.Size = new System.Drawing.Size(176, 39);
-            this.ImportListButton.TabIndex = 32;
-            this.ImportListButton.Text = "Import List";
-            this.ImportListButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ImportListButton.UseVisualStyleBackColor = false;
-            // 
-            // Edit
-            // 
-            this.Edit.BackColor = System.Drawing.Color.White;
-            this.Edit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
-            this.Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.Edit.ForeColor = System.Drawing.Color.Black;
-            this.Edit.Image = global::LabLog.Properties.Resources.Edit_Logo;
-            this.Edit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Edit.Location = new System.Drawing.Point(990, 330);
-            this.Edit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Edit.Name = "Edit";
-            this.Edit.Size = new System.Drawing.Size(133, 39);
-            this.Edit.TabIndex = 31;
-            this.Edit.Text = "Edit";
-            this.Edit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Edit.UseVisualStyleBackColor = false;
-            this.Edit.Click += new System.EventHandler(this.Edit_Click);
+            this.EditButton.BackColor = System.Drawing.Color.White;
+            this.EditButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
+            this.EditButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.EditButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.EditButton.ForeColor = System.Drawing.Color.Black;
+            this.EditButton.Image = global::LabLog.Properties.Resources.Edit_Logo;
+            this.EditButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.EditButton.Location = new System.Drawing.Point(997, 336);
+            this.EditButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.EditButton.Name = "EditButton";
+            this.EditButton.Size = new System.Drawing.Size(133, 39);
+            this.EditButton.TabIndex = 31;
+            this.EditButton.Text = "Edit";
+            this.EditButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.EditButton.UseVisualStyleBackColor = false;
+            this.EditButton.Visible = false;
+            this.EditButton.Click += new System.EventHandler(this.Edit_Click);
             // 
             // RemoveButton
             // 
@@ -221,7 +186,7 @@
             this.RemoveButton.ForeColor = System.Drawing.Color.Black;
             this.RemoveButton.Image = global::LabLog.Properties.Resources.Remove_Logo;
             this.RemoveButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RemoveButton.Location = new System.Drawing.Point(990, 286);
+            this.RemoveButton.Location = new System.Drawing.Point(997, 286);
             this.RemoveButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.RemoveButton.Name = "RemoveButton";
             this.RemoveButton.Size = new System.Drawing.Size(133, 39);
@@ -229,6 +194,7 @@
             this.RemoveButton.Text = "Remove";
             this.RemoveButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.RemoveButton.UseVisualStyleBackColor = false;
+            this.RemoveButton.Visible = false;
             this.RemoveButton.Click += new System.EventHandler(this.RemoveButton_Click);
             // 
             // AddButton
@@ -240,7 +206,7 @@
             this.AddButton.ForeColor = System.Drawing.Color.Black;
             this.AddButton.Image = global::LabLog.Properties.Resources.Add_Logo;
             this.AddButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AddButton.Location = new System.Drawing.Point(489, 291);
+            this.AddButton.Location = new System.Drawing.Point(483, 291);
             this.AddButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(133, 39);
@@ -267,60 +233,84 @@
             this.DataGrid.AllowUserToResizeRows = false;
             this.DataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGrid.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.DataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.StuNameTable});
-            this.DataGrid.Location = new System.Drawing.Point(634, 186);
+            this.Subjects});
+            this.DataGrid.Location = new System.Drawing.Point(634, 226);
             this.DataGrid.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.DataGrid.MultiSelect = false;
             this.DataGrid.Name = "DataGrid";
             this.DataGrid.ReadOnly = true;
             this.DataGrid.RowHeadersVisible = false;
             this.DataGrid.RowHeadersWidth = 62;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.DataGrid.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.DataGrid.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.DataGrid.RowTemplate.Height = 28;
             this.DataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DataGrid.ShowCellToolTips = false;
             this.DataGrid.ShowEditingIcon = false;
-            this.DataGrid.Size = new System.Drawing.Size(344, 384);
+            this.DataGrid.Size = new System.Drawing.Size(344, 434);
             this.DataGrid.TabIndex = 30;
             // 
-            // StuNameTable
+            // SearchBox
             // 
-            this.StuNameTable.HeaderText = "Subjects";
-            this.StuNameTable.MinimumWidth = 6;
-            this.StuNameTable.Name = "StuNameTable";
-            this.StuNameTable.ReadOnly = true;
+            this.SearchBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SearchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.SearchBox.Location = new System.Drawing.Point(737, 186);
+            this.SearchBox.Name = "SearchBox";
+            this.SearchBox.Size = new System.Drawing.Size(241, 26);
+            this.SearchBox.TabIndex = 34;
+            this.SearchBox.TextChanged += new System.EventHandler(this.SearchBox_TextChanged);
+            // 
+            // Subjects
+            // 
+            this.Subjects.HeaderText = "Subjects";
+            this.Subjects.MinimumWidth = 6;
+            this.Subjects.Name = "Subjects";
+            this.Subjects.ReadOnly = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
+            this.label1.Location = new System.Drawing.Point(594, 187);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(125, 24);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "Search Box:";
             // 
             // SubjectListPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.SearchBox);
             this.Controls.Add(this.DataGrid);
-            this.Controls.Add(this.ExportListButton);
-            this.Controls.Add(this.ImportListButton);
-            this.Controls.Add(this.Edit);
+            this.Controls.Add(this.EditButton);
             this.Controls.Add(this.RemoveButton);
             this.Controls.Add(this.AddButton);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SubjectListPanel";
             this.Size = new System.Drawing.Size(1316, 782);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -333,12 +323,12 @@
         private System.Windows.Forms.Button HomeButton;
         private System.Windows.Forms.Button LogoutButton;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button ExportListButton;
-        private System.Windows.Forms.Button ImportListButton;
-        private System.Windows.Forms.Button Edit;
+        private System.Windows.Forms.Button EditButton;
         private System.Windows.Forms.Button RemoveButton;
         private System.Windows.Forms.Button AddButton;
         private System.Windows.Forms.DataGridView DataGrid;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StuNameTable;
+        private System.Windows.Forms.TextBox SearchBox;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Subjects;
+        private System.Windows.Forms.Label label1;
     }
 }

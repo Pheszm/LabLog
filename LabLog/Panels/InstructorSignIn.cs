@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace LabLog.Panels
 {
     public partial class InstructorSignIn : UserControl
     {
+        string consstring = Program.MainServerDataBase;
+
         public InstructorSignIn()
         {
             InitializeComponent();
@@ -28,13 +31,13 @@ namespace LabLog.Panels
 
         private void ViewPassword_Click(object sender, EventArgs e)
         {
-           if(PasswordView == false)
+            if (PasswordView == false)
             {
                 ViewPassword.Image = Properties.Resources.UnView_Password_Logo;
                 PasswordView = true;
                 Password.PasswordChar = '\0';
             }
-            else if(PasswordView == true)
+            else if (PasswordView == true)
             {
                 ViewPassword.Image = Properties.Resources.View_Password_Logo;
                 PasswordView = false;
@@ -44,12 +47,44 @@ namespace LabLog.Panels
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            if(Username.Text != "" && Password.Text != "")
+            string username = Username.Text.Trim();
+            string password = Password.Text.Trim();
+
+            // Check if username and password are not empty
+            if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(password))
             {
-                Panels.InstructorsMenu Menu = new Panels.InstructorsMenu();
-                this.Controls.Clear();
-                this.Controls.Add(Menu);
+                string sql = "SELECT * FROM instructors_account WHERE username = @username AND pass = @password";
+
+                using (MySqlConnection con = new MySqlConnection(consstring))
+                {
+                    con.Open();
+                    MySqlCommand cmd = new MySqlCommand(sql, con);
+                    cmd.Parameters.AddWithValue("@username", username);
+                    cmd.Parameters.AddWithValue("@password", password);
+
+                    MySqlDataReader reader = cmd.ExecuteReader();
+
+                    if (reader.Read())
+                    {
+                        // Successful login
+                        Panels.InstructorsMenu Menu = new Panels.InstructorsMenu();
+                        this.Controls.Clear();
+                        this.Controls.Add(Menu);
+                    }
+                    else
+                    {
+                        // Failed login
+                        MessageBox.Show("Wrong Username or Password");
+                    }
+
+                    reader.Close();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Username and Password cannot be empty");
             }
         }
+
     }
 }

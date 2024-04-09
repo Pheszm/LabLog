@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SubjectEditing));
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.StudentID = new System.Windows.Forms.TextBox();
+            this.SubjectTextBox = new System.Windows.Forms.TextBox();
             this.Edit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -60,14 +60,14 @@
             this.label4.TabIndex = 52;
             this.label4.Text = "Subject:";
             // 
-            // StudentID
+            // SubjectTextBox
             // 
-            this.StudentID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StudentID.Location = new System.Drawing.Point(144, 106);
-            this.StudentID.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
-            this.StudentID.Name = "StudentID";
-            this.StudentID.Size = new System.Drawing.Size(313, 30);
-            this.StudentID.TabIndex = 51;
+            this.SubjectTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubjectTextBox.Location = new System.Drawing.Point(144, 106);
+            this.SubjectTextBox.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.SubjectTextBox.Name = "SubjectTextBox";
+            this.SubjectTextBox.Size = new System.Drawing.Size(313, 30);
+            this.SubjectTextBox.TabIndex = 51;
             // 
             // Edit
             // 
@@ -97,10 +97,10 @@
             this.Controls.Add(this.Edit);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.StudentID);
+            this.Controls.Add(this.SubjectTextBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SubjectEditing";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SubjectEditing";
@@ -113,7 +113,7 @@
 
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox StudentID;
+        private System.Windows.Forms.TextBox SubjectTextBox;
         private System.Windows.Forms.Button Edit;
     }
 }

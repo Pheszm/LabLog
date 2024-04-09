@@ -12,6 +12,10 @@ CREATE TABLE studentlist(
     Gender varchar(255)
 );
 
+CREATE TABLE subjectlist(
+    Subjects varchar(255)
+);
+
 CREATE TABLE courselist(
     course varchar(255)
 );
@@ -23,6 +27,18 @@ VALUES ("IT"),
 ("RVM-TTP"),
 ("BSBA"),
 ("CRIM");
+
+CREATE TABLE instructors_account(
+    Username varchar(255),
+    Pass varchar(255)
+);
+
+INSERT INTO instructors_account (Username, Pass)
+VALUES ("Razel", "123456"),
+("Carl", "123456"),
+("Marly", "123456");
+
+
 
 #sortnames:
 SELECT * FROM studentlist ORDER BY StudentName;
