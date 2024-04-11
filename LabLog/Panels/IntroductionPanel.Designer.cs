@@ -31,6 +31,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.InstructorLogin = new System.Windows.Forms.Button();
             this.StudentLogin = new System.Windows.Forms.Button();
+            this.TimeShower = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,6 +85,17 @@
             this.StudentLogin.UseVisualStyleBackColor = false;
             this.StudentLogin.Click += new System.EventHandler(this.StudentLogin_Click);
             // 
+            // TimeShower
+            // 
+            this.TimeShower.AutoSize = true;
+            this.TimeShower.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TimeShower.ForeColor = System.Drawing.Color.White;
+            this.TimeShower.Location = new System.Drawing.Point(26, 26);
+            this.TimeShower.Name = "TimeShower";
+            this.TimeShower.Size = new System.Drawing.Size(355, 29);
+            this.TimeShower.TabIndex = 5;
+            this.TimeShower.Text = "You are already Logged In as";
+            // 
             // IntroductionPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -91,6 +103,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
             this.BackgroundImage = global::LabLog.Properties.Resources.Introduction_Wallaper;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.TimeShower);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.InstructorLogin);
             this.Controls.Add(this.StudentLogin);
@@ -100,6 +113,7 @@
             this.Size = new System.Drawing.Size(1316, 782);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -108,5 +122,6 @@
         private System.Windows.Forms.Button InstructorLogin;
         private System.Windows.Forms.Button StudentLogin;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label TimeShower;
     }
 }
