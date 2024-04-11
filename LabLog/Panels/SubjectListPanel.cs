@@ -31,43 +31,50 @@ namespace LabLog.Panels
 
         void refreshTable()
         {
-            DataGrid.Rows.Clear();
-            string sql = "SELECT * FROM subjectlist";
-
-            if (!string.IsNullOrEmpty(SearchBox.Text))
+            try
             {
-                sql += $" WHERE subjects LIKE '%{SearchBox.Text}%'";
-            }
+                DataGrid.Rows.Clear();
+                string sql = "SELECT * FROM subjectlist";
 
-            List<string[]> rowData = new List<string[]>(); // Store rows data
-
-            using (MySqlConnection con = new MySqlConnection(consstring))
-            {
-                con.Open();
-                MySqlCommand cmd = new MySqlCommand(sql, con);
-                MySqlDataReader reader = cmd.ExecuteReader();
-
-                while (reader.Read())
+                if (!string.IsNullOrEmpty(SearchBox.Text))
                 {
-                    // Store each row's data in rowData list
-                    rowData.Add(new string[]
-                    {
-                reader["subjects"].ToString(),
-                    });
+                    sql += $" WHERE subjects LIKE '%{SearchBox.Text}%'";
                 }
 
-                reader.Close();
+                List<string[]> rowData = new List<string[]>(); // Store rows data
+
+                using (MySqlConnection con = new MySqlConnection(consstring))
+                {
+                    con.Open();
+                    MySqlCommand cmd = new MySqlCommand(sql, con);
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            // Store each row's data in rowData list
+                            rowData.Add(new string[]
+                            {
+                        reader["subjects"].ToString(),
+                            });
+                        }
+                    }
+                }
+
+                // Sort the rowData list based on the first letter of the student's name
+                rowData.Sort((x, y) => x[0][0].CompareTo(y[0][0]));
+
+                // Add sorted rows to DataGrid
+                foreach (string[] row in rowData)
+                {
+                    DataGrid.Rows.Add(row);
+                }
             }
-
-            // Sort the rowData list based on the first letter of the student's name
-            rowData.Sort((x, y) => x[0][0].CompareTo(y[0][0]));
-
-            // Add sorted rows to DataGrid
-            foreach (string[] row in rowData)
+            catch (Exception ex)
             {
-                DataGrid.Rows.Add(row);
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
 
 
@@ -125,21 +132,29 @@ namespace LabLog.Panels
 
         private void RemoveButton_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show($"Are you sure you want to delete '{StoredSubject}' from the record?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
+            try
             {
-                using (MySqlConnection con = new MySqlConnection(consstring))
+                DialogResult result = MessageBox.Show($"Are you sure you want to delete '{StoredSubject}' from the record?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
                 {
-                    con.Open();
-                    string sql = "DELETE FROM subjectlist WHERE subjects = @Subjects";
-                    MySqlCommand cmd = new MySqlCommand(sql, con);
-                    cmd.Parameters.AddWithValue("@Subjects", StoredSubject);
-                    cmd.ExecuteNonQuery();
-                }
+                    using (MySqlConnection con = new MySqlConnection(consstring))
+                    {
+                        con.Open();
+                        string sql = "DELETE FROM subjectlist WHERE subjects = @Subjects";
+                        MySqlCommand cmd = new MySqlCommand(sql, con);
+                        cmd.Parameters.AddWithValue("@Subjects", StoredSubject);
+                        cmd.ExecuteNonQuery();
+                    }
 
+                }
+                refreshTable();
             }
-            refreshTable();
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
 
         private void Edit_Click(object sender, EventArgs e)
         {

@@ -24,39 +24,55 @@ namespace LabLog.Forms
 
         private void LoadCourses()
         {
-            using (MySqlConnection conn = new MySqlConnection(consstring))
+            try
             {
-                conn.Open();
-                string query = "SELECT course FROM courselist";
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                MySqlDataReader reader = cmd.ExecuteReader();
-
-                while (reader.Read())
+                using (MySqlConnection conn = new MySqlConnection(consstring))
                 {
-                    string courseName = reader.GetString(0);
-                    CourseComboBox.Items.Add(courseName);
+                    conn.Open();
+                    string query = "SELECT course FROM courselist";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            string courseName = reader.GetString(0);
+                            CourseComboBox.Items.Add(courseName);
+                        }
+                    }
                 }
-
-                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                // Handle any exceptions that occur during loading courses
+                MessageBox.Show("An error occurred while loading courses: " + ex.Message);
             }
         }
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            using (MySqlConnection con = new MySqlConnection(consstring))
+            try
             {
-                con.Open();
-                string sql = "INSERT INTO studentlist (StudentID, StudentName, Course, YearLevel, Gender) VALUES (@StudentID, @StudentName, @Course, @YearLevel, @Gender)";
-                MySqlCommand cmd = new MySqlCommand(sql, con);
-                cmd.Parameters.AddWithValue("@StudentID", StudentID.Text);
-                cmd.Parameters.AddWithValue("@StudentName", $"{FirstName.Text} {MiddleInitialComboBox.Text}. {LastName.Text}");
-                cmd.Parameters.AddWithValue("@Course", CourseComboBox.Text);
-                cmd.Parameters.AddWithValue("@YearLevel", YearLevel.Text);
-                cmd.Parameters.AddWithValue("@Gender", GenderComboBox.Text);
-                cmd.ExecuteNonQuery();
+                using (MySqlConnection con = new MySqlConnection(consstring))
+                {
+                    con.Open();
+                    string sql = "INSERT INTO studentlist (StudentID, StudentName, Course, YearLevel, Gender) VALUES (@StudentID, @StudentName, @Course, @YearLevel, @Gender)";
+                    MySqlCommand cmd = new MySqlCommand(sql, con);
+                    cmd.Parameters.AddWithValue("@StudentID", StudentID.Text);
+                    cmd.Parameters.AddWithValue("@StudentName", $"{FirstName.Text} {MiddleInitialComboBox.Text}. {LastName.Text}");
+                    cmd.Parameters.AddWithValue("@Course", CourseComboBox.Text);
+                    cmd.Parameters.AddWithValue("@YearLevel", YearLevel.Text);
+                    cmd.Parameters.AddWithValue("@Gender", GenderComboBox.Text);
+                    cmd.ExecuteNonQuery();
+                }
+                this.Close();
             }
-            this.Close();
+            catch (Exception ex)
+            {
+                // Handle any exceptions that occur during adding a student
+                MessageBox.Show("An error occurred while adding a student: " + ex.Message);
+            }
         }
+
     }
 }
 

@@ -9,7 +9,7 @@ namespace LabLog
     internal static class Program
     {
         //public static string MainServerDataBase = "server=localhost;uid=root;pwd=123456;database=sqlandcsharp";
-       public static string MainServerDataBase = "server=192.168.1.12;port=3306;uid=root;pwd=123456;database=sqlandcsharp";
+       public static string MainServerDataBase = "server=192.168.1.16;port=3306;uid=root;pwd=123456;database=sqlandcsharp";
 
         /// <summary>
         /// The main entry point for the application.

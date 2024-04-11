@@ -25,27 +25,34 @@ namespace LabLog.Forms
 
         private void Edit_Click(object sender, EventArgs e)
         {
-            string NewSubjectName = SubjectTextBox.Text;
+            string newSubjectName = SubjectTextBox.Text;
 
-            using (MySqlConnection con = new MySqlConnection(consstring))
+            try
             {
-                con.Open();
-                string sql = "UPDATE subjectlist SET subjects = @NewName WHERE subjects = @RecentSubjectName";
-                MySqlCommand cmd = new MySqlCommand(sql, con);
-                cmd.Parameters.AddWithValue("@NewName", NewSubjectName);
-                cmd.Parameters.AddWithValue("@RecentSubjectName", StoredSubject);
-                int rowsAffected = cmd.ExecuteNonQuery();
+                using (MySqlConnection con = new MySqlConnection(consstring))
+                {
+                    con.Open();
+                    string sql = "UPDATE subjectlist SET subjects = @NewName WHERE subjects = @RecentSubjectName";
+                    MySqlCommand cmd = new MySqlCommand(sql, con);
+                    cmd.Parameters.AddWithValue("@NewName", newSubjectName);
+                    cmd.Parameters.AddWithValue("@RecentSubjectName", StoredSubject);
+                    int rowsAffected = cmd.ExecuteNonQuery();
 
-                if (rowsAffected > 0)
-                {
-                    MessageBox.Show("Record updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Record updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("No records were updated.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-                else
-                {
-                    MessageBox.Show("No records were updated.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                this.Close();
             }
-            this.Close();
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

@@ -31,22 +31,30 @@ namespace LabLog.Forms
 
         private void LoadCourses()
         {
-            using (MySqlConnection conn = new MySqlConnection(consstring))
+            try
             {
-                conn.Open();
-                string query = "SELECT course FROM courselist";
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                MySqlDataReader reader = cmd.ExecuteReader();
-
-                while (reader.Read())
+                using (MySqlConnection conn = new MySqlConnection(consstring))
                 {
-                    string courseName = reader.GetString(0);
-                    CourseComboBox.Items.Add(courseName);
+                    conn.Open();
+                    string query = "SELECT course FROM courselist";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            string courseName = reader.GetString(0);
+                            CourseComboBox.Items.Add(courseName);
+                        }
+                    }
                 }
-
-                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                // Handle any exceptions that occur during loading courses
+                MessageBox.Show("An error occurred while loading courses: " + ex.Message);
             }
         }
+
 
         private void Save_Click(object sender, EventArgs e)
         {
@@ -56,28 +64,36 @@ namespace LabLog.Forms
             string yearLevel = YearLevel.Text;
             string gender = GenderComboBox.Text;
 
-            using (MySqlConnection con = new MySqlConnection(consstring))
+            try
             {
-                con.Open();
-                string sql = "UPDATE studentlist SET StudentName = @name, Course = @course, YearLevel = @yearLevel, Gender = @gender WHERE StudentID = @studentID";
-                MySqlCommand cmd = new MySqlCommand(sql, con);
-                cmd.Parameters.AddWithValue("@name", name);
-                cmd.Parameters.AddWithValue("@course", course);
-                cmd.Parameters.AddWithValue("@yearLevel", yearLevel);
-                cmd.Parameters.AddWithValue("@gender", gender);
-                cmd.Parameters.AddWithValue("@studentID", studentID);
-                int rowsAffected = cmd.ExecuteNonQuery();
+                using (MySqlConnection con = new MySqlConnection(consstring))
+                {
+                    con.Open();
+                    string sql = "UPDATE studentlist SET StudentName = @name, Course = @course, YearLevel = @yearLevel, Gender = @gender WHERE StudentID = @studentID";
+                    MySqlCommand cmd = new MySqlCommand(sql, con);
+                    cmd.Parameters.AddWithValue("@name", name);
+                    cmd.Parameters.AddWithValue("@course", course);
+                    cmd.Parameters.AddWithValue("@yearLevel", yearLevel);
+                    cmd.Parameters.AddWithValue("@gender", gender);
+                    cmd.Parameters.AddWithValue("@studentID", studentID);
+                    int rowsAffected = cmd.ExecuteNonQuery();
 
-                if (rowsAffected > 0)
-                {
-                    MessageBox.Show("Record updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Record updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("No records were updated.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-                else
-                {
-                    MessageBox.Show("No records were updated.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                this.Close();
             }
-            this.Close();
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
     }
 }

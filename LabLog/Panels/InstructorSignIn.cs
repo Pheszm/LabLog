@@ -50,41 +50,49 @@ namespace LabLog.Panels
             string username = Username.Text.Trim();
             string password = Password.Text.Trim();
 
-            // Check if username and password are not empty
-            if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(password))
+            try
             {
-                string sql = "SELECT * FROM instructors_account WHERE username = @username AND pass = @password";
-
-                using (MySqlConnection con = new MySqlConnection(consstring))
+                // Check if username and password are not empty
+                if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(password))
                 {
-                    con.Open();
-                    MySqlCommand cmd = new MySqlCommand(sql, con);
-                    cmd.Parameters.AddWithValue("@username", username);
-                    cmd.Parameters.AddWithValue("@password", password);
+                    string sql = "SELECT * FROM instructors_account WHERE username = @username AND pass = @password";
 
-                    MySqlDataReader reader = cmd.ExecuteReader();
-
-                    if (reader.Read())
+                    using (MySqlConnection con = new MySqlConnection(consstring))
                     {
-                        // Successful login
-                        Panels.InstructorsMenu Menu = new Panels.InstructorsMenu();
-                        this.Controls.Clear();
-                        this.Controls.Add(Menu);
-                    }
-                    else
-                    {
-                        // Failed login
-                        MessageBox.Show("Wrong Username or Password");
-                    }
+                        con.Open();
+                        MySqlCommand cmd = new MySqlCommand(sql, con);
+                        cmd.Parameters.AddWithValue("@username", username);
+                        cmd.Parameters.AddWithValue("@password", password);
 
-                    reader.Close();
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                // Successful login
+                                Panels.InstructorsMenu Menu = new Panels.InstructorsMenu();
+                                this.Controls.Clear();
+                                this.Controls.Add(Menu);
+                            }
+                            else
+                            {
+                                // Failed login
+                                MessageBox.Show("Wrong Username or Password");
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Username and Password cannot be empty");
                 }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Username and Password cannot be empty");
+                // Handle any exceptions that occur during lo+gin
+                MessageBox.Show("An error occurred: " + ex.Message);
             }
         }
+
 
     }
 }

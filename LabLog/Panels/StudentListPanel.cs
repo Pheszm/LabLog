@@ -35,26 +35,34 @@ namespace LabLog.Panels
 
         private void LoadCourses()
         {
-            YearLevelComboBox.Text = "none";
-            CourseComboBox.Text = "none";
-            GenderComboBox.Text = "none";
-
-            using (MySqlConnection conn = new MySqlConnection(consstring))
+            try
             {
-                conn.Open();
-                string query = "SELECT course FROM courselist";
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                MySqlDataReader reader = cmd.ExecuteReader();
+                YearLevelComboBox.Text = "none";
+                CourseComboBox.Text = "none";
+                GenderComboBox.Text = "none";
 
-                while (reader.Read())
+                using (MySqlConnection conn = new MySqlConnection(consstring))
                 {
-                    string courseName = reader.GetString(0);
-                    CourseComboBox.Items.Add(courseName);
+                    conn.Open();
+                    string query = "SELECT course FROM courselist";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            string courseName = reader.GetString(0);
+                            CourseComboBox.Items.Add(courseName);
+                        }
+                    }
                 }
-
-                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                // Handle any exceptions that occur during loading courses
+                MessageBox.Show("An error occurred while loading courses: " + ex.Message);
             }
         }
+
         private void CourseComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             refreshTable();
@@ -113,21 +121,30 @@ namespace LabLog.Panels
 
         private void RemoveButton_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show($"Are you sure you want to delete '{SelectName}' from the record?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
+            try
             {
-                using (MySqlConnection con = new MySqlConnection(consstring))
+                DialogResult result = MessageBox.Show($"Are you sure you want to delete '{SelectName}' from the record?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
                 {
-                    con.Open();
-                    string sql = "DELETE FROM studentlist WHERE StudentID = @studentID";
-                    MySqlCommand cmd = new MySqlCommand(sql, con);
-                    cmd.Parameters.AddWithValue("@studentID", SelectStuID);
-                    cmd.ExecuteNonQuery();
-                }
+                    using (MySqlConnection con = new MySqlConnection(consstring))
+                    {
+                        con.Open();
+                        string sql = "DELETE FROM studentlist WHERE StudentID = @studentID";
+                        MySqlCommand cmd = new MySqlCommand(sql, con);
+                        cmd.Parameters.AddWithValue("@studentID", SelectStuID);
+                        cmd.ExecuteNonQuery();
+                    }
 
+                }
+                refreshTable();
             }
-            refreshTable();
+            catch (Exception ex)
+            {
+                // Handle any exceptions that occur during removing a student
+                MessageBox.Show("An error occurred while removing a student: " + ex.Message);
+            }
         }
+
 
         private void DataGrid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -147,62 +164,68 @@ namespace LabLog.Panels
 
         void refreshTable()
         {
-            DataGrid.Rows.Clear();
-
-            string yearLevel = YearLevelComboBox.Text;
-            string course = CourseComboBox.Text;
-            string gender = GenderComboBox.Text;
-
-            string sql = "SELECT * FROM studentlist";
-
-            if (!string.IsNullOrEmpty(yearLevel) || !string.IsNullOrEmpty(course) || !string.IsNullOrEmpty(gender))
+            try
             {
-                sql += " WHERE 1=1";
+                DataGrid.Rows.Clear();
 
-                if (!string.IsNullOrEmpty(yearLevel) && yearLevel != "none")
-                    sql += $" AND YearLevel = '{yearLevel}'";
+                string yearLevel = YearLevelComboBox.Text;
+                string course = CourseComboBox.Text;
+                string gender = GenderComboBox.Text;
 
-                if (!string.IsNullOrEmpty(course) && course != "none")
-                    sql += $" AND Course = '{course}'";
+                string sql = "SELECT * FROM studentlist";
 
-                if (!string.IsNullOrEmpty(gender) && gender != "none")
-                    sql += $" AND Gender = '{gender}'";
-            }
-
-            List<string[]> rowData = new List<string[]>(); // Store rows data
-
-            using (MySqlConnection con = new MySqlConnection(consstring))
-            {
-                con.Open();
-                MySqlCommand cmd = new MySqlCommand(sql, con);
-                MySqlDataReader reader = cmd.ExecuteReader();
-
-                while (reader.Read())
+                if (!string.IsNullOrEmpty(yearLevel) || !string.IsNullOrEmpty(course) || !string.IsNullOrEmpty(gender))
                 {
-                    // Store each row's data in rowData list
-                    rowData.Add(new string[]
-                    {
-                reader["StudentName"].ToString(),
-                reader["StudentID"].ToString(),
-                reader["Course"].ToString(),
-                reader["YearLevel"].ToString(),
-                reader["Gender"].ToString()
-                    });
+                    sql += " WHERE 1=1";
+
+                    if (!string.IsNullOrEmpty(yearLevel) && yearLevel != "none")
+                        sql += $" AND YearLevel = '{yearLevel}'";
+
+                    if (!string.IsNullOrEmpty(course) && course != "none")
+                        sql += $" AND Course = '{course}'";
+
+                    if (!string.IsNullOrEmpty(gender) && gender != "none")
+                        sql += $" AND Gender = '{gender}'";
                 }
 
-                reader.Close();
+                List<string[]> rowData = new List<string[]>(); // Store rows data
+
+                using (MySqlConnection con = new MySqlConnection(consstring))
+                {
+                    con.Open();
+                    MySqlCommand cmd = new MySqlCommand(sql, con);
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            // Store each row's data in rowData list
+                            rowData.Add(new string[]
+                            {
+                        reader["StudentName"].ToString(),
+                        reader["StudentID"].ToString(),
+                        reader["Course"].ToString(),
+                        reader["YearLevel"].ToString(),
+                        reader["Gender"].ToString()
+                            });
+                        }
+                    }
+                }
+
+                // Sort the rowData list based on the first letter of the student's name
+                rowData.Sort((x, y) => x[0][0].CompareTo(y[0][0]));
+
+                // Add sorted rows to DataGrid
+                foreach (string[] row in rowData)
+                {
+                    DataGrid.Rows.Add(row);
+                }
             }
-
-            // Sort the rowData list based on the first letter of the student's name
-            rowData.Sort((x, y) => x[0][0].CompareTo(y[0][0]));
-
-            // Add sorted rows to DataGrid
-            foreach (string[] row in rowData)
+            catch (Exception ex)
             {
-                DataGrid.Rows.Add(row);
+                // Handle any exceptions that occur during refreshing the table
+                MessageBox.Show("An error occurred while refreshing the table: " + ex.Message);
             }
         }
-
     }
 }
 

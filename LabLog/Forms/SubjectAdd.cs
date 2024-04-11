@@ -22,15 +22,23 @@ namespace LabLog.Forms
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            using (MySqlConnection con = new MySqlConnection(consstring))
+            try
             {
-                con.Open();
-                string sql = "INSERT INTO subjectlist (subjects) VALUES (@Subjects)";
-                MySqlCommand cmd = new MySqlCommand(sql, con);
-                cmd.Parameters.AddWithValue("@Subjects", AddSubjectBox.Text);
-                cmd.ExecuteNonQuery();
+                using (MySqlConnection con = new MySqlConnection(consstring))
+                {
+                    con.Open();
+                    string sql = "INSERT INTO subjectlist (subjects) VALUES (@Subjects)";
+                    MySqlCommand cmd = new MySqlCommand(sql, con);
+                    cmd.Parameters.AddWithValue("@Subjects", AddSubjectBox.Text);
+                    cmd.ExecuteNonQuery();
+                }
+                this.Close();
             }
-            this.Close();
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
     }
 }
