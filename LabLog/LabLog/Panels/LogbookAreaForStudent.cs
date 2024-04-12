@@ -18,6 +18,32 @@ namespace LabLog.Panels
         {
             InitializeComponent();
             WhosLogin.Text = "Student";
+            Loadsubjects();
+        }
+
+        void Loadsubjects()
+        {
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(consstring))
+                {
+                    conn.Open();
+                    string query = "SELECT Subjects FROM subjectlist";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            string courseName = reader.GetString(0);
+                            Purpose.Items.Add(courseName);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred while loading courses: " + ex.Message);
+            }
         }
 
         private void Purpose_SelectedIndexChanged(object sender, EventArgs e)

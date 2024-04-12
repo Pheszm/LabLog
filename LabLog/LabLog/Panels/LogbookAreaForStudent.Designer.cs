@@ -57,7 +57,7 @@
             this.label3.Location = new System.Drawing.Point(470, 100);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(460, 68);
+            this.label3.Size = new System.Drawing.Size(367, 55);
             this.label3.TabIndex = 33;
             this.label3.Text = "STUDENT LOG";
             // 
@@ -67,7 +67,7 @@
             this.StudentID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StudentID.Location = new System.Drawing.Point(571, 186);
             this.StudentID.Name = "StudentID";
-            this.StudentID.Size = new System.Drawing.Size(289, 34);
+            this.StudentID.Size = new System.Drawing.Size(289, 29);
             this.StudentID.TabIndex = 29;
             this.StudentID.Tag = "";
             // 
@@ -107,7 +107,7 @@
             this.Timeout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Timeout.Name = "Timeout";
             this.Timeout.ShowUpDown = true;
-            this.Timeout.Size = new System.Drawing.Size(218, 34);
+            this.Timeout.Size = new System.Drawing.Size(218, 29);
             this.Timeout.TabIndex = 14;
             this.Timeout.Value = new System.DateTime(2024, 2, 18, 0, 0, 0, 0);
             // 
@@ -120,7 +120,7 @@
             this.label4.Location = new System.Drawing.Point(77, 62);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 20);
+            this.label4.Size = new System.Drawing.Size(68, 17);
             this.label4.TabIndex = 17;
             this.label4.Text = "Reason:";
             // 
@@ -133,7 +133,7 @@
             this.Ste.Location = new System.Drawing.Point(4, 25);
             this.Ste.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Ste.Name = "Ste";
-            this.Ste.Size = new System.Drawing.Size(179, 20);
+            this.Ste.Size = new System.Drawing.Size(153, 17);
             this.Ste.TabIndex = 15;
             this.Ste.Text = "Estimated Time-out:";
             // 
@@ -147,7 +147,7 @@
             this.LoginButton.Image = global::LabLog.Properties.Resources.Person_Logo;
             this.LoginButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LoginButton.Location = new System.Drawing.Point(592, 534);
-            this.LoginButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LoginButton.Margin = new System.Windows.Forms.Padding(2);
             this.LoginButton.Name = "LoginButton";
             this.LoginButton.Size = new System.Drawing.Size(86, 32);
             this.LoginButton.TabIndex = 34;
@@ -163,11 +163,10 @@
             this.Purpose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Purpose.FormattingEnabled = true;
             this.Purpose.Items.AddRange(new object[] {
-            "Available Subject",
             "Others"});
             this.Purpose.Location = new System.Drawing.Point(571, 234);
             this.Purpose.Name = "Purpose";
-            this.Purpose.Size = new System.Drawing.Size(218, 33);
+            this.Purpose.Size = new System.Drawing.Size(218, 28);
             this.Purpose.TabIndex = 28;
             this.Purpose.SelectedIndexChanged += new System.EventHandler(this.Purpose_SelectedIndexChanged);
             // 
@@ -180,7 +179,7 @@
             this.label2.Location = new System.Drawing.Point(481, 240);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 20);
+            this.label2.Size = new System.Drawing.Size(73, 17);
             this.label2.TabIndex = 31;
             this.label2.Text = "Purpose:";
             // 
@@ -193,7 +192,7 @@
             this.label1.Location = new System.Drawing.Point(467, 195);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 20);
+            this.label1.Size = new System.Drawing.Size(89, 17);
             this.label1.TabIndex = 30;
             this.label1.Text = "Student ID:";
             // 
@@ -208,7 +207,7 @@
             "Student"});
             this.WhosLogin.Location = new System.Drawing.Point(422, 35);
             this.WhosLogin.Name = "WhosLogin";
-            this.WhosLogin.Size = new System.Drawing.Size(106, 33);
+            this.WhosLogin.Size = new System.Drawing.Size(106, 28);
             this.WhosLogin.TabIndex = 35;
             this.WhosLogin.SelectedIndexChanged += new System.EventHandler(this.WhosLogin_SelectedIndexChanged);
             // 
@@ -267,7 +266,7 @@
             this.Controls.Add(this.Purpose);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LogbookAreaForStudent";
             this.Size = new System.Drawing.Size(987, 635);
             this.OthersPanel.ResumeLayout(false);
