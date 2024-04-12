@@ -164,12 +164,6 @@
     <Compile Include="Panels\StudentListPanel.Designer.cs">
       <DependentUpon>StudentListPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Panels\StudentSignIn.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Panels\StudentSignIn.Designer.cs">
-      <DependentUpon>StudentSignIn.cs</DependentUpon>
-    </Compile>
     <Compile Include="Panels\SubjectListPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -222,9 +216,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\StudentListPanel.resx">
       <DependentUpon>StudentListPanel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Panels\StudentSignIn.resx">
-      <DependentUpon>StudentSignIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\SubjectListPanel.resx">
       <DependentUpon>SubjectListPanel.cs</DependentUpon>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Windows.Forms;
 
 namespace LabLog.Panels
@@ -25,22 +26,54 @@ namespace LabLog.Panels
             }
         }
 
+        string consstring = Program.MainServerDataBase;
+
         private void StudentLogin_Click(object sender, EventArgs e)
         {
-            if(Program.LoggedIn == true)
+            if (Program.LoggedIn == true)
             {
                 Program.Time = 300;
                 Program.LoggedIn = false;
-                MessageBox.Show("You have been logged out.", "Successfully Logged out");
+
+                using (MySqlConnection con = new MySqlConnection(consstring))
+                {
+                    try
+                    {
+                        con.Open(); // Open the connection
+
+                        string TimeOut = DateTime.Now.ToString("hh:mm tt");
+                        string ExactDate = DateTime.Now.ToString("dd/MM/yy");
+
+                        string query = "UPDATE logbooks SET TimeOut = @TimeOut WHERE FullName = @FullName AND ExactDate = @ExactDate";
+
+                        using (MySqlCommand cmd = new MySqlCommand(query, con))
+                        {
+                            cmd.Parameters.AddWithValue("@FullName", Program.NameLoggedIn);
+                            cmd.Parameters.AddWithValue("@ExactDate", ExactDate);
+                            cmd.Parameters.AddWithValue("@TimeOut", TimeOut);
+                            cmd.ExecuteNonQuery(); // Execute the query
+                        }
+
+                        MessageBox.Show($"You have been logged out as '{Program.NameLoggedIn}'", "Successfully Logged out");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"An error occurred: {ex.Message}", "Error");
+                    }
+                }
             }
             else
             {
-                Panels.StudentSignIn Login = new Panels.StudentSignIn();
+                Panels.LogbookAreaForStudent Login = new Panels.LogbookAreaForStudent();
                 this.Controls.Clear();
                 this.Controls.Add(Login);
             }
+
             AlreadyLogin();
         }
+
+
+
 
         private void InstructorLogin_Click(object sender, EventArgs e)
         {

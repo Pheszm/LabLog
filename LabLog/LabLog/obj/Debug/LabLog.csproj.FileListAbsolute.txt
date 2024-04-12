@@ -254,7 +254,6 @@ C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLo
 C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\LabLog\LabLog\obj\Debug\LabLog.Panels.LogbookAreaForStaff.resources
 C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\LabLog\LabLog\obj\Debug\LabLog.Panels.LogbookAreaForStudent.resources
 C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\LabLog\LabLog\obj\Debug\LabLog.Panels.StudentListPanel.resources
-C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\LabLog\LabLog\obj\Debug\LabLog.Panels.StudentSignIn.resources
 C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\LabLog\LabLog\obj\Debug\LabLog.Panels.SubjectListPanel.resources
 C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\LabLog\LabLog\obj\Debug\LabLog.Properties.Resources.resources
 C:\Users\DOSTX-Admin\OneDrive - DOST-REGIONAL OFFICE X\Desktop\Carls Respo\LabLog\LabLog\LabLog\obj\Debug\LabLog.TheMainForm.resources
