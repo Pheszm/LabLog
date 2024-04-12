@@ -11,13 +11,35 @@ namespace LabLog.Panels
         {
             InitializeComponent();
             StartTimer(); // Call StartTimer method when the IntroductionPanel is initialized
+            AlreadyLogin();
+        }
+        void AlreadyLogin()
+        {
+            if(Program.LoggedIn == true)
+            {
+                StudentLogin.Text = "LOG-OUT";
+            }
+            else
+            {
+                StudentLogin.Text = "LOG-IN";
+            }
         }
 
         private void StudentLogin_Click(object sender, EventArgs e)
         {
-            Panels.StudentSignIn Login = new Panels.StudentSignIn();
-            this.Controls.Clear();
-            this.Controls.Add(Login);
+            if(Program.LoggedIn == true)
+            {
+                Program.Time = 300;
+                Program.LoggedIn = false;
+                MessageBox.Show("You have been logged out.", "Successfully Logged out");
+            }
+            else
+            {
+                Panels.StudentSignIn Login = new Panels.StudentSignIn();
+                this.Controls.Clear();
+                this.Controls.Add(Login);
+            }
+            AlreadyLogin();
         }
 
         private void InstructorLogin_Click(object sender, EventArgs e)
