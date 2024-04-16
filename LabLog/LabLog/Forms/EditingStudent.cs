@@ -50,13 +50,25 @@ namespace LabLog.Forms
             }
             catch (Exception ex)
             {
-                // Handle any exceptions that occur during loading courses
                 MessageBox.Show("An error occurred while loading courses: " + ex.Message);
             }
         }
 
 
         private void Save_Click(object sender, EventArgs e)
+        {
+            if (FullNamee.Text == "" || CourseComboBox.Text == "" || YearLevel.Text == "" || GenderComboBox.Text == "")
+            {
+                MessageBox.Show("Please Fill-Up each Important Details.", "Attention");
+            }
+            else
+            {
+                UpdatingStudent();
+            }
+        }
+
+
+        void UpdatingStudent()
         {
             string studentID = StudentID;
             string name = FullNamee.Text;
@@ -94,6 +106,5 @@ namespace LabLog.Forms
                 MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
     }
 }

@@ -24,6 +24,9 @@ namespace LabLog
             Panels.IntroductionPanel intro = new Panels.IntroductionPanel();
             panel1.Controls.Add(intro);
 
+
+            TimerCode timerCode = new TimerCode();
+            timerCode.StartTimer();
         }
 
         private void TheMainForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -34,6 +37,10 @@ namespace LabLog
                 if (result == DialogResult.No)
                 {
                     e.Cancel = true;
+                }
+                else
+                {
+                    TimerCode.Shutdown();
                 }
             }
         }

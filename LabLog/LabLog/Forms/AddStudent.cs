@@ -22,7 +22,21 @@ namespace LabLog.Forms
         string consstring = Program.MainServerDataBase;
 
 
-        private void LoadCourses()
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            if(StudentID.Text == "" || FirstName.Text == "" || LastName.Text == "" || CourseComboBox.Text == "" ||
+                YearLevel.Text == "" || GenderComboBox.Text == "")
+            {
+                MessageBox.Show("Please Fill-Up each Important Details.", "Attention");
+            }
+            else
+            {
+                addingStudent();
+                MessageBox.Show("Student Successfully added.", "Successful");
+            }
+        }
+
+        void LoadCourses()
         {
             try
             {
@@ -43,12 +57,11 @@ namespace LabLog.Forms
             }
             catch (Exception ex)
             {
-                // Handle any exceptions that occur during loading courses
                 MessageBox.Show("An error occurred while loading courses: " + ex.Message);
             }
         }
 
-        private void AddButton_Click(object sender, EventArgs e)
+        void addingStudent()
         {
             try
             {
@@ -67,8 +80,7 @@ namespace LabLog.Forms
                 this.Close();
             }
             catch (Exception ex)
-            {
-                // Handle any exceptions that occur during adding a student
+            { 
                 MessageBox.Show("An error occurred while adding a student: " + ex.Message);
             }
         }

@@ -47,10 +47,50 @@ namespace LabLog.Panels
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
+            string username = Username.Text.Trim();
+            string password = Password.Text.Trim();
 
-            Panels.InstructorsMenu Menu = new Panels.InstructorsMenu();
-            this.Controls.Clear();
-            this.Controls.Add(Menu);
+            try
+            {
+                // Check if username and password are not empty
+                if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(password))
+                {
+                    string sql = "SELECT * FROM instructors_account WHERE username = @username AND pass = @password";
+
+                    using (MySqlConnection con = new MySqlConnection(consstring))
+                    {
+                        con.Open();
+                        MySqlCommand cmd = new MySqlCommand(sql, con);
+                        cmd.Parameters.AddWithValue("@username", username);
+                        cmd.Parameters.AddWithValue("@password", password);
+
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                // Successful login
+                                Panels.InstructorsMenu Menu = new Panels.InstructorsMenu();
+                                this.Controls.Clear();
+                                this.Controls.Add(Menu);
+                            }
+                            else
+                            {
+                                // Failed login
+                                MessageBox.Show("Wrong Username or Password");
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Username and Password cannot be empty");
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle any exceptions that occur during lo+gin
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
         }
 
 

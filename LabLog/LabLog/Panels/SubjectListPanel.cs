@@ -144,6 +144,7 @@ namespace LabLog.Panels
                         MySqlCommand cmd = new MySqlCommand(sql, con);
                         cmd.Parameters.AddWithValue("@Subjects", StoredSubject);
                         cmd.ExecuteNonQuery();
+                        MessageBox.Show("Subject Successfully Removed.", "Removed Successful");
                     }
 
                 }

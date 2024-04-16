@@ -183,6 +183,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TimerCode.cs" />
     <EmbeddedResource Include="Forms\AddStudent.resx">
       <DependentUpon>AddStudent.cs</DependentUpon>
     </EmbeddedResource>

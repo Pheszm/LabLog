@@ -31,6 +31,7 @@ namespace LabLog.Panels
         private void YearLevelComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             refreshTable();
+            FilterButtonCheck();
         }
 
         private void LoadCourses()
@@ -58,7 +59,6 @@ namespace LabLog.Panels
             }
             catch (Exception ex)
             {
-                // Handle any exceptions that occur during loading courses
                 MessageBox.Show("An error occurred while loading courses: " + ex.Message);
             }
         }
@@ -66,6 +66,8 @@ namespace LabLog.Panels
         private void CourseComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             refreshTable();
+            FilterButtonCheck();
+
         }
 
         private void HomeButton_Click(object sender, EventArgs e)
@@ -110,7 +112,26 @@ namespace LabLog.Panels
         private void GenderComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             refreshTable();
+            FilterButtonCheck();
         }
+
+        private void ResetFilterButton_Click(object sender, EventArgs e)
+        {
+            YearLevelComboBox.Text = "none";
+            CourseComboBox.Text = "none";
+            GenderComboBox.Text = "none";
+            FilterButtonCheck();
+        }
+        void FilterButtonCheck()
+        {
+            if(YearLevelComboBox.Text != "none" || CourseComboBox.Text != "none" || GenderComboBox.Text != "none") {
+                ResetFilterButton.Visible = true;
+            }
+            else
+            {
+                ResetFilterButton.Visible = false;
+            }
+        } 
 
         private void Edit_Click(object sender, EventArgs e)
         {
@@ -133,6 +154,7 @@ namespace LabLog.Panels
                         MySqlCommand cmd = new MySqlCommand(sql, con);
                         cmd.Parameters.AddWithValue("@studentID", SelectStuID);
                         cmd.ExecuteNonQuery();
+                        MessageBox.Show("Student Successfully Removed.", "Removed Successful");
                     }
 
                 }
@@ -140,7 +162,6 @@ namespace LabLog.Panels
             }
             catch (Exception ex)
             {
-                // Handle any exceptions that occur during removing a student
                 MessageBox.Show("An error occurred while removing a student: " + ex.Message);
             }
         }
