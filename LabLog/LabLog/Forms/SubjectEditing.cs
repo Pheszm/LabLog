@@ -25,6 +25,18 @@ namespace LabLog.Forms
 
         private void Edit_Click(object sender, EventArgs e)
         {
+            if (SubjectTextBox.Text == "")
+            {
+                MessageBox.Show("Please Fill-Up each Important Details.", "Attention");
+            }
+            else
+            {
+                UpdateSubject();
+            }
+        }
+
+        void UpdateSubject()
+        {
             string newSubjectName = SubjectTextBox.Text;
 
             try

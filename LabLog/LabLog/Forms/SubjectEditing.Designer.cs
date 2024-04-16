@@ -41,10 +41,10 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Arial", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(19, 11);
-            this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label7.Location = new System.Drawing.Point(14, 9);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(475, 68);
+            this.label7.Size = new System.Drawing.Size(376, 55);
             this.label7.TabIndex = 53;
             this.label7.Text = "Editing Student";
             // 
@@ -54,19 +54,20 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(33, 110);
+            this.label4.Location = new System.Drawing.Point(25, 89);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 25);
+            this.label4.Size = new System.Drawing.Size(75, 20);
             this.label4.TabIndex = 52;
             this.label4.Text = "Subject:";
             // 
             // SubjectTextBox
             // 
             this.SubjectTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SubjectTextBox.Location = new System.Drawing.Point(144, 106);
-            this.SubjectTextBox.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.SubjectTextBox.Location = new System.Drawing.Point(108, 86);
+            this.SubjectTextBox.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.SubjectTextBox.Name = "SubjectTextBox";
-            this.SubjectTextBox.Size = new System.Drawing.Size(313, 30);
+            this.SubjectTextBox.Size = new System.Drawing.Size(236, 26);
             this.SubjectTextBox.TabIndex = 51;
             // 
             // Edit
@@ -78,10 +79,10 @@
             this.Edit.ForeColor = System.Drawing.Color.Black;
             this.Edit.Image = global::LabLog.Properties.Resources.Edit_Logo;
             this.Edit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Edit.Location = new System.Drawing.Point(205, 158);
-            this.Edit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Edit.Location = new System.Drawing.Point(154, 128);
+            this.Edit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Edit.Name = "Edit";
-            this.Edit.Size = new System.Drawing.Size(108, 39);
+            this.Edit.Size = new System.Drawing.Size(81, 32);
             this.Edit.TabIndex = 56;
             this.Edit.Text = "Save";
             this.Edit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -90,17 +91,16 @@
             // 
             // SubjectEditing
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
-            this.ClientSize = new System.Drawing.Size(513, 229);
+            this.ClientSize = new System.Drawing.Size(399, 186);
             this.Controls.Add(this.Edit);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.SubjectTextBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SubjectEditing";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SubjectEditing";

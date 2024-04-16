@@ -22,6 +22,19 @@ namespace LabLog.Forms
 
         private void AddButton_Click(object sender, EventArgs e)
         {
+            if (AddSubjectBox.Text == "")
+            {
+                MessageBox.Show("Please Fill-Up the Box.", "Attention");
+            }
+            else
+            {
+                addSubject();
+                MessageBox.Show("Subject Successfully added.", "Successful");
+            }
+        }
+
+        void addSubject()
+        {
             try
             {
                 using (MySqlConnection con = new MySqlConnection(consstring))
