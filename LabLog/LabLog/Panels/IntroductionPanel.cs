@@ -12,6 +12,7 @@ namespace LabLog.Panels
         {
             InitializeComponent();
             StartTimer();
+            beeep();
             AlreadyLogin();
         }
         void AlreadyLogin()
@@ -84,7 +85,6 @@ namespace LabLog.Panels
 
         private void StartTimer()
         {
-            TimeShower.Text = $"Time Left to Login: {Program.Time}";
             Timee = new Timer();
             Timee.Interval = 1000;
             Timee.Tick += Timer_Tick;
@@ -92,6 +92,11 @@ namespace LabLog.Panels
         }
 
         private void Timer_Tick(object sender, EventArgs e)
+        {
+            beeep();
+        }
+
+        void beeep()
         {
             if (Program.LoggedIn == false)
             {

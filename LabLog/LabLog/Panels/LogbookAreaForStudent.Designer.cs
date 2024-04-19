@@ -32,9 +32,7 @@
             this.StudentID = new System.Windows.Forms.TextBox();
             this.OthersPanel = new System.Windows.Forms.Panel();
             this.Reasonn = new System.Windows.Forms.TextBox();
-            this.Timeout = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
-            this.Ste = new System.Windows.Forms.Label();
             this.LoginButton = new System.Windows.Forms.Button();
             this.Purpose = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -54,7 +52,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
-            this.label3.Location = new System.Drawing.Point(470, 100);
+            this.label3.Location = new System.Drawing.Point(513, 100);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(367, 55);
@@ -75,13 +73,11 @@
             // 
             this.OthersPanel.BackColor = System.Drawing.Color.Transparent;
             this.OthersPanel.Controls.Add(this.Reasonn);
-            this.OthersPanel.Controls.Add(this.Timeout);
             this.OthersPanel.Controls.Add(this.label4);
-            this.OthersPanel.Controls.Add(this.Ste);
             this.OthersPanel.Location = new System.Drawing.Point(468, 275);
             this.OthersPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.OthersPanel.Name = "OthersPanel";
-            this.OthersPanel.Size = new System.Drawing.Size(456, 245);
+            this.OthersPanel.Size = new System.Drawing.Size(456, 203);
             this.OthersPanel.TabIndex = 32;
             this.OthersPanel.Visible = false;
             // 
@@ -89,7 +85,7 @@
             // 
             this.Reasonn.BackColor = System.Drawing.Color.White;
             this.Reasonn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.Reasonn.Location = new System.Drawing.Point(146, 62);
+            this.Reasonn.Location = new System.Drawing.Point(103, 16);
             this.Reasonn.Multiline = true;
             this.Reasonn.Name = "Reasonn";
             this.Reasonn.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -97,45 +93,18 @@
             this.Reasonn.TabIndex = 16;
             this.Reasonn.Tag = "";
             // 
-            // Timeout
-            // 
-            this.Timeout.CustomFormat = "hh:mm tt";
-            this.Timeout.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.Timeout.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.Timeout.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Timeout.Location = new System.Drawing.Point(169, 17);
-            this.Timeout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Timeout.Name = "Timeout";
-            this.Timeout.ShowUpDown = true;
-            this.Timeout.Size = new System.Drawing.Size(218, 29);
-            this.Timeout.TabIndex = 14;
-            this.Timeout.Value = new System.DateTime(2024, 2, 18, 0, 0, 0, 0);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
-            this.label4.Location = new System.Drawing.Point(77, 62);
+            this.label4.Location = new System.Drawing.Point(18, 16);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 17);
             this.label4.TabIndex = 17;
             this.label4.Text = "Reason:";
-            // 
-            // Ste
-            // 
-            this.Ste.AutoSize = true;
-            this.Ste.BackColor = System.Drawing.Color.Transparent;
-            this.Ste.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.Ste.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(46)))), ((int)(((byte)(77)))));
-            this.Ste.Location = new System.Drawing.Point(4, 25);
-            this.Ste.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Ste.Name = "Ste";
-            this.Ste.Size = new System.Drawing.Size(153, 17);
-            this.Ste.TabIndex = 15;
-            this.Ste.Text = "Estimated Time-out:";
             // 
             // LoginButton
             // 
@@ -146,10 +115,10 @@
             this.LoginButton.ForeColor = System.Drawing.Color.Black;
             this.LoginButton.Image = global::LabLog.Properties.Resources.Person_Logo;
             this.LoginButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LoginButton.Location = new System.Drawing.Point(592, 534);
+            this.LoginButton.Location = new System.Drawing.Point(644, 488);
             this.LoginButton.Margin = new System.Windows.Forms.Padding(2);
             this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Size = new System.Drawing.Size(86, 32);
+            this.LoginButton.Size = new System.Drawing.Size(86, 39);
             this.LoginButton.TabIndex = 34;
             this.LoginButton.Text = "Log-In";
             this.LoginButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -284,9 +253,7 @@
         private System.Windows.Forms.TextBox StudentID;
         private System.Windows.Forms.Panel OthersPanel;
         private System.Windows.Forms.TextBox Reasonn;
-        private System.Windows.Forms.DateTimePicker Timeout;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label Ste;
         private System.Windows.Forms.Button LoginButton;
         private System.Windows.Forms.ComboBox Purpose;
         private System.Windows.Forms.Label label2;

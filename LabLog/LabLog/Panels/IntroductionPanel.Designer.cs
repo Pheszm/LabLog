@@ -93,9 +93,9 @@
             this.TimeShower.Location = new System.Drawing.Point(20, 21);
             this.TimeShower.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TimeShower.Name = "TimeShower";
-            this.TimeShower.Size = new System.Drawing.Size(284, 24);
+            this.TimeShower.Size = new System.Drawing.Size(40, 24);
             this.TimeShower.TabIndex = 5;
-            this.TimeShower.Text = "You are already Logged In as";
+            this.TimeShower.Text = ". . .";
             // 
             // IntroductionPanel
             // 

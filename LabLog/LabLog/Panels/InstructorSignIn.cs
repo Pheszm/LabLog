@@ -47,6 +47,22 @@ namespace LabLog.Panels
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
+            if(Username.Text == "" || Password.Text == "")
+            {
+                MessageBox.Show("Username and Password cannot be empty");
+                label1.ForeColor = string.IsNullOrEmpty(Username.Text) ? Color.FromArgb(180, 0, 0) : Color.FromArgb(28, 46, 77);
+                label2.ForeColor = string.IsNullOrEmpty(Password.Text) ? Color.FromArgb(180, 0, 0) : Color.FromArgb(28, 46, 77);
+            }
+            else
+            {
+                label1.ForeColor = Color.FromArgb(28, 46, 77);
+                label2.ForeColor = Color.FromArgb(28, 46, 77);
+                LoginProcess();
+            }
+        }
+
+        void LoginProcess()
+        {
             string username = Username.Text.Trim();
             string password = Password.Text.Trim();
 
@@ -92,7 +108,5 @@ namespace LabLog.Panels
                 MessageBox.Show("An error occurred: " + ex.Message);
             }
         }
-
-
     }
 }
