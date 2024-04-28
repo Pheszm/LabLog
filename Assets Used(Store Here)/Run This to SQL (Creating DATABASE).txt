@@ -40,13 +40,14 @@ VALUES ("Razel", "123456"),
 
 
 Create table Logbooks(
+	IPaddress varchar(200),
 	FullName varchar(200),
-    ID varchar(100),
-    Purpose varchar(250),
-    Reason varchar(5000),
-    TimeIn varchar(50),
-    TimeOut varchar(50),
-    ExactDate varchar(50)
+    	ID varchar(100),
+    	Purpose varchar(250),
+   	Reason varchar(5000),
+   	TimeIn varchar(50),
+    	TimeOut varchar(50),
+    	ExactDate varchar(50)
 );
 
 

@@ -32,7 +32,6 @@ namespace LabLog.Forms
             else
             {
                 addingStudent();
-                MessageBox.Show("Student Successfully added.", "Successful");
             }
         }
 
@@ -68,22 +67,39 @@ namespace LabLog.Forms
                 using (MySqlConnection con = new MySqlConnection(consstring))
                 {
                     con.Open();
+
+                    // Check if the student ID already exists
+                    string checkIDQuery = "SELECT COUNT(*) FROM studentlist WHERE StudentID = @StudentID";
+                    MySqlCommand checkIDCmd = new MySqlCommand(checkIDQuery, con);
+                    checkIDCmd.Parameters.AddWithValue("@StudentID", StudentID.Text);
+                    int count = Convert.ToInt32(checkIDCmd.ExecuteScalar());
+
+                    // If the count is greater than 0, it means the ID already exists
+                    if (count > 0)
+                    {
+                        MessageBox.Show("Student ID already exists. Please use a different ID.");
+                        return; // Exit the method without adding the student
+                    }
+
+                    // If the ID doesn't exist, proceed to insert the new student
                     string sql = "INSERT INTO studentlist (StudentID, StudentName, Course, YearLevel, Gender) VALUES (@StudentID, @StudentName, @Course, @YearLevel, @Gender)";
                     MySqlCommand cmd = new MySqlCommand(sql, con);
-                    cmd.Parameters.AddWithValue("@StudentID", StudentID.Text);
+                    cmd.Parameters.AddWithValue("@StudentID", StudentID.Text.ToUpper());
                     cmd.Parameters.AddWithValue("@StudentName", $"{FirstName.Text} {MiddleInitialComboBox.Text}. {LastName.Text}");
                     cmd.Parameters.AddWithValue("@Course", CourseComboBox.Text);
                     cmd.Parameters.AddWithValue("@YearLevel", YearLevel.Text);
                     cmd.Parameters.AddWithValue("@Gender", GenderComboBox.Text);
                     cmd.ExecuteNonQuery();
+                    MessageBox.Show("Student Successfully added.", "Successful");
                 }
                 this.Close();
             }
             catch (Exception ex)
-            { 
+            {
                 MessageBox.Show("An error occurred while adding a student: " + ex.Message);
             }
         }
+
 
     }
 }

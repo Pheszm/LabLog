@@ -63,8 +63,8 @@ namespace LabLog.Panels
 
         void LoginProcess()
         {
-            string username = Username.Text.Trim();
-            string password = Password.Text.Trim();
+            string username = Username.Text;
+            string password = Password.Text;
 
             try
             {

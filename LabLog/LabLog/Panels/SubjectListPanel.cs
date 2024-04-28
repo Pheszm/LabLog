@@ -31,6 +31,10 @@ namespace LabLog.Panels
 
         void refreshTable()
         {
+            DataGrid.RowsDefaultCellStyle.SelectionBackColor = Color.FromArgb(255, 255, 255);
+            label4.Visible = true;
+            RemoveButton.Visible = false;
+            EditButton.Visible = false;
             try
             {
                 DataGrid.Rows.Clear();
@@ -86,6 +90,8 @@ namespace LabLog.Panels
                 DataGridViewRow selectedRow = DataGrid.Rows[e.RowIndex];
                 StoredSubject = selectedRow.Cells["Subjects"].Value.ToString();
             }
+            DataGrid.RowsDefaultCellStyle.SelectionBackColor = Color.FromArgb(47, 118, 200);
+            label4.Visible = false;
             RemoveButton.Visible = true;
             EditButton.Visible = true;
         }

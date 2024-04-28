@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -56,7 +57,8 @@ namespace LabLog.Panels
         {
             try
             {
-                string Purposee = Reasonn.Text;
+                string IPaddresss = GetLocalIPAddress();
+                string Reasonnn = Reasonn.Text;
                 string FullName = PersonName.Text;
                 string TimeIn = DateTime.Now.ToString("hh:mm tt");
                 string ExactDate = DateTime.Now.ToString("dd/MM/yy"); 
@@ -64,11 +66,12 @@ namespace LabLog.Panels
                 using (MySqlConnection con = new MySqlConnection(consstring))
                 {
                     con.Open();
-                    string query = "INSERT INTO logbooks (FullName, Purpose, TimeIn, ExactDate) VALUES (@FullName, @Purpose, @TimeIn, @ExactDate)"; // Fixed parameter name in query
+                    string query = "INSERT INTO logbooks (IPaddress, FullName, Reason, TimeIn, ExactDate) VALUES (@IPadd, @FullName, @Reason, @TimeIn, @ExactDate)"; // Fixed parameter name in query
                     using (MySqlCommand insertCmd = new MySqlCommand(query, con))
                     {
+                        insertCmd.Parameters.AddWithValue("@IPadd", IPaddresss);
                         insertCmd.Parameters.AddWithValue("@FullName", FullName);
-                        insertCmd.Parameters.AddWithValue("@Purpose", Purposee); 
+                        insertCmd.Parameters.AddWithValue("@Reason", Reasonnn); 
                         insertCmd.Parameters.AddWithValue("@TimeIn", TimeIn);
                         insertCmd.Parameters.AddWithValue("@ExactDate", ExactDate);
                         insertCmd.ExecuteNonQuery();
@@ -88,6 +91,35 @@ namespace LabLog.Panels
             {
                 MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        string GetLocalIPAddress()
+        {
+            string localIP = "";
+            try
+            {
+                // Get the host name of the local machine
+                string hostName = Dns.GetHostName();
+
+                // Get the IP addresses associated with the host
+                IPAddress[] addresses = Dns.GetHostAddresses(hostName);
+
+                // Find the first IPv4 address
+                foreach (IPAddress address in addresses)
+                {
+                    if (address.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
+                    {
+                        localIP = address.ToString();
+                        break;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exception, if any
+                MessageBox.Show("Error getting IP address: " + ex.Message);
+            }
+            return localIP;
         }
 
     }

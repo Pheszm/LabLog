@@ -23,6 +23,7 @@ namespace LabLog.Forms
             InitializeComponent();
             LoadCourses();
             StudentID = id;
+            StuIDtxt.Text = id;
             FullNamee.Text = name;
             CourseComboBox.Text = course;
             YearLevel.Text = level;
@@ -70,24 +71,33 @@ namespace LabLog.Forms
 
         void UpdatingStudent()
         {
-            string studentID = StudentID;
-            string name = FullNamee.Text;
-            string course = CourseComboBox.Text;
-            string yearLevel = YearLevel.Text;
-            string gender = GenderComboBox.Text;
-
             try
             {
                 using (MySqlConnection con = new MySqlConnection(consstring))
                 {
                     con.Open();
-                    string sql = "UPDATE studentlist SET StudentName = @name, Course = @course, YearLevel = @yearLevel, Gender = @gender WHERE StudentID = @studentID";
+
+                    // Check if the new StudentID already exists
+                    string checkExistenceQuery = "SELECT COUNT(*) FROM studentlist WHERE StudentID = @newId";
+                    MySqlCommand checkExistenceCmd = new MySqlCommand(checkExistenceQuery, con);
+                    checkExistenceCmd.Parameters.AddWithValue("@newId", StuIDtxt.Text);
+                    int existingRecordsCount = Convert.ToInt32(checkExistenceCmd.ExecuteScalar());
+
+                    if (existingRecordsCount > 0 && StuIDtxt.Text.ToUpper() != StudentID)
+                    {
+                        MessageBox.Show("StudentID already exists. Cannot update record.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return; // Exit the method without proceeding further
+                    }
+
+                    // If StudentID doesn't exist, proceed with update
+                    string sql = "UPDATE studentlist SET StudentID = @newId, StudentName = @name, Course = @course, YearLevel = @yearLevel, Gender = @gender WHERE StudentID = @studentID";
                     MySqlCommand cmd = new MySqlCommand(sql, con);
-                    cmd.Parameters.AddWithValue("@name", name);
-                    cmd.Parameters.AddWithValue("@course", course);
-                    cmd.Parameters.AddWithValue("@yearLevel", yearLevel);
-                    cmd.Parameters.AddWithValue("@gender", gender);
-                    cmd.Parameters.AddWithValue("@studentID", studentID);
+                    cmd.Parameters.AddWithValue("@newId", StuIDtxt.Text.ToUpper());
+                    cmd.Parameters.AddWithValue("@name", FullNamee.Text);
+                    cmd.Parameters.AddWithValue("@course", CourseComboBox.Text);
+                    cmd.Parameters.AddWithValue("@yearLevel", YearLevel.Text);
+                    cmd.Parameters.AddWithValue("@gender", GenderComboBox.Text);
+                    cmd.Parameters.AddWithValue("@studentID", StudentID);
                     int rowsAffected = cmd.ExecuteNonQuery();
 
                     if (rowsAffected > 0)
@@ -106,5 +116,6 @@ namespace LabLog.Forms
                 MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
     }
 }

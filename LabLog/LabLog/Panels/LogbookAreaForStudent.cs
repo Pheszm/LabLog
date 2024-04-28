@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
 
 namespace LabLog.Panels
 {
@@ -79,6 +80,7 @@ namespace LabLog.Panels
             {
                 try
                 {
+                    string IPaddresss = GetLocalIPAddress();
                     string ID = StudentID.Text;
                     string Purposee = Purpose.Text;
                     string Reason = Reasonn.Text;
@@ -103,9 +105,10 @@ namespace LabLog.Panels
                                 fullName = result.ToString();
 
                                 // Inserting data into logbooks database
-                                query = "INSERT INTO logbooks (FullName, ID, Purpose, Reason, TimeIn, ExactDate) VALUES (@FullName, @ID, @Purpose, @Reason, @TimeIn, @ExactDate)";
+                                query = "INSERT INTO logbooks (IPaddress, FullName, ID, Purpose, Reason, TimeIn, ExactDate) VALUES (@IPadd, @FullName, @ID, @Purpose, @Reason, @TimeIn, @ExactDate)";
                                 using (MySqlCommand insertCmd = new MySqlCommand(query, con))
                                 {
+                                    insertCmd.Parameters.AddWithValue("@IPadd", IPaddresss);
                                     insertCmd.Parameters.AddWithValue("@FullName", fullName);
                                     insertCmd.Parameters.AddWithValue("@ID", ID);
                                     insertCmd.Parameters.AddWithValue("@Purpose", Purposee);
@@ -138,6 +141,38 @@ namespace LabLog.Panels
                 }
             }
         }
+
+
+        string GetLocalIPAddress()
+        {
+            string localIP = "";
+            try
+            {
+                // Get the host name of the local machine
+                string hostName = Dns.GetHostName();
+
+                // Get the IP addresses associated with the host
+                IPAddress[] addresses = Dns.GetHostAddresses(hostName);
+
+                // Find the first IPv4 address
+                foreach (IPAddress address in addresses)
+                {
+                    if (address.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
+                    {
+                        localIP = address.ToString();
+                        break;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exception, if any
+                MessageBox.Show("Error getting IP address: " + ex.Message);
+            }
+            return localIP;
+        }
+
+
 
         private void ReturnButton_Click(object sender, EventArgs e)
         {

@@ -18,7 +18,8 @@ namespace LabLog.Panels
         {
             InitializeComponent();
             refreshTable();
-            DataGrid.CellClick += DataGrid_CellClick; // Attach event handler
+            DataGridView1.CellClick += DataGrid_CellClick; // Attach event handler
+            DataGridView1.ClearSelection();
             LoadCourses();
         }
 
@@ -131,7 +132,12 @@ namespace LabLog.Panels
             {
                 ResetFilterButton.Visible = false;
             }
-        } 
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void Edit_Click(object sender, EventArgs e)
         {
@@ -169,25 +175,33 @@ namespace LabLog.Panels
 
         private void DataGrid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int overallRow = DataGrid.RowCount; //Prevent Selecting the Empty at the Last
+            int overallRow = DataGridView1.RowCount; //Prevent Selecting the Empty at the Last
             if (e.RowIndex >= 0 && e.RowIndex <= overallRow - 2)
             {
-                DataGridViewRow selectedRow = DataGrid.Rows[e.RowIndex];
+                DataGridViewRow selectedRow = DataGridView1.Rows[e.RowIndex];
                 SelectStuID = selectedRow.Cells["StuIDTable"].Value.ToString();
                 SelectName = selectedRow.Cells["StuNameTable"].Value.ToString();
                 SelectCourse = selectedRow.Cells["StuCourseTable"].Value.ToString();
                 SelectYearLevel = selectedRow.Cells["StuYearLevelTable"].Value.ToString();
                 SelectGender = selectedRow.Cells["StuGenderTable"].Value.ToString();
             }
+            DataGridView1.RowsDefaultCellStyle.SelectionBackColor = Color.FromArgb(47, 118, 200);
+            label4.Visible = false;
             RemoveButton.Visible = true;
             EditButton.Visible = true;
         }
 
         void refreshTable()
         {
+            DataGridView1.RowsDefaultCellStyle.SelectionBackColor = Color.FromArgb(255, 255, 255);
+
+            label4.Visible = true;
+
+            RemoveButton.Visible = false;
+            EditButton.Visible = false;
             try
             {
-                DataGrid.Rows.Clear();
+                DataGridView1.Rows.Clear();
 
                 string yearLevel = YearLevelComboBox.Text;
                 string course = CourseComboBox.Text;
@@ -238,7 +252,7 @@ namespace LabLog.Panels
                 // Add sorted rows to DataGrid
                 foreach (string[] row in rowData)
                 {
-                    DataGrid.Rows.Add(row);
+                    DataGridView1.Rows.Add(row);
                 }
             }
             catch (Exception ex)

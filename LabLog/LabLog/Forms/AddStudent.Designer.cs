@@ -227,7 +227,7 @@
             this.AddButton.Image = global::LabLog.Properties.Resources.Add_Logo;
             this.AddButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AddButton.Location = new System.Drawing.Point(198, 365);
-            this.AddButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AddButton.Margin = new System.Windows.Forms.Padding(2);
             this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(76, 32);
             this.AddButton.TabIndex = 36;
@@ -269,12 +269,12 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(73, 326);
+            this.label8.Location = new System.Drawing.Point(98, 327);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(74, 20);
+            this.label8.Size = new System.Drawing.Size(44, 20);
             this.label8.TabIndex = 39;
-            this.label8.Text = "Gender:";
+            this.label8.Text = "Sex:";
             // 
             // AddStudent
             // 
