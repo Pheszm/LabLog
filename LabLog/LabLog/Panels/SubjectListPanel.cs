@@ -21,7 +21,7 @@ namespace LabLog.Panels
         }
 
         string consstring = Program.MainServerDataBase;
-        string StoredSubject;
+        string SubjectCode, DescriptiveTitle;
 
 
         private void SearchBox_TextChanged(object sender, EventArgs e)
@@ -42,7 +42,7 @@ namespace LabLog.Panels
 
                 if (!string.IsNullOrEmpty(SearchBox.Text))
                 {
-                    sql += $" WHERE subjects LIKE '%{SearchBox.Text}%'";
+                    sql += $" WHERE Subject_Title LIKE '%{SearchBox.Text}%'";
                 }
 
                 List<string[]> rowData = new List<string[]>(); // Store rows data
@@ -58,7 +58,8 @@ namespace LabLog.Panels
                             // Store each row's data in rowData list
                             rowData.Add(new string[]
                             {
-                        reader["subjects"].ToString(),
+                        reader["Subject_Code"].ToString(),
+                        reader["Subject_Title"].ToString(),
                             });
                         }
                     }
@@ -88,7 +89,8 @@ namespace LabLog.Panels
             if (e.RowIndex >= 0 && e.RowIndex <= overallRow - 2)
             {
                 DataGridViewRow selectedRow = DataGrid.Rows[e.RowIndex];
-                StoredSubject = selectedRow.Cells["Subjects"].Value.ToString();
+                SubjectCode = selectedRow.Cells["Subjects"].Value.ToString();
+                DescriptiveTitle = selectedRow.Cells["Title"].Value.ToString();
             }
             DataGrid.RowsDefaultCellStyle.SelectionBackColor = Color.FromArgb(47, 118, 200);
             label4.Visible = false;
@@ -140,15 +142,15 @@ namespace LabLog.Panels
         {
             try
             {
-                DialogResult result = MessageBox.Show($"Are you sure you want to delete '{StoredSubject}' from the record?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult result = MessageBox.Show($"Are you sure you want to delete '{SubjectCode}' from the record?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
                 {
                     using (MySqlConnection con = new MySqlConnection(consstring))
                     {
                         con.Open();
-                        string sql = "DELETE FROM subjectlist WHERE subjects = @Subjects";
+                        string sql = "DELETE FROM subjectlist WHERE Subject_Code = @SubjectCode";
                         MySqlCommand cmd = new MySqlCommand(sql, con);
-                        cmd.Parameters.AddWithValue("@Subjects", StoredSubject);
+                        cmd.Parameters.AddWithValue("@SubjectCode", SubjectCode);
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Subject Successfully Removed.", "Removed Successful");
                     }
@@ -165,7 +167,7 @@ namespace LabLog.Panels
 
         private void Edit_Click(object sender, EventArgs e)
         {
-            Forms.SubjectEditing edit = new Forms.SubjectEditing(StoredSubject);
+            Forms.SubjectEditing edit = new Forms.SubjectEditing(SubjectCode, DescriptiveTitle);
             edit.ShowDialog();
             refreshTable();
         }

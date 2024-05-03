@@ -13,7 +13,8 @@ CREATE TABLE studentlist(
 );
 
 CREATE TABLE subjectlist(
-    Subjects varchar(255)
+    Subject_Code varchar(255),
+    Subject_Title varchar(255)
 );
 
 CREATE TABLE courselist(

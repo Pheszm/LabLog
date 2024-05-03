@@ -16,16 +16,17 @@ namespace LabLog.Forms
         string consstring = Program.MainServerDataBase;
         string StoredSubject;
 
-        public SubjectEditing(string Subject)
+        public SubjectEditing(string SubjectCode, string DescriptiveTitle)
         {
             InitializeComponent();
-            StoredSubject = Subject;
-            SubjectTextBox.Text = Subject;
+            StoredSubject = SubjectCode;
+            SubjectTextBox.Text = SubjectCode;
+            titlebox.Text = DescriptiveTitle;
         }
 
         private void Edit_Click(object sender, EventArgs e)
         {
-            if (SubjectTextBox.Text == "")
+            if (SubjectTextBox.Text == "" || titlebox.Text == "")
             {
                 MessageBox.Show("Please Fill-Up each Important Details.", "Attention");
             }
@@ -37,16 +38,15 @@ namespace LabLog.Forms
 
         void UpdateSubject()
         {
-            string newSubjectName = SubjectTextBox.Text;
-
             try
             {
                 using (MySqlConnection con = new MySqlConnection(consstring))
                 {
                     con.Open();
-                    string sql = "UPDATE subjectlist SET subjects = @NewName WHERE subjects = @RecentSubjectName";
+                    string sql = "UPDATE subjectlist SET Subject_Code = @NewName, Subject_Title = @NewTitle WHERE Subject_Code = @RecentSubjectName";
                     MySqlCommand cmd = new MySqlCommand(sql, con);
-                    cmd.Parameters.AddWithValue("@NewName", newSubjectName);
+                    cmd.Parameters.AddWithValue("@NewName", SubjectTextBox.Text);
+                    cmd.Parameters.AddWithValue("@NewTitle", titlebox.Text);
                     cmd.Parameters.AddWithValue("@RecentSubjectName", StoredSubject);
                     int rowsAffected = cmd.ExecuteNonQuery();
 

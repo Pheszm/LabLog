@@ -29,7 +29,7 @@ namespace LabLog.Panels
                 using (MySqlConnection conn = new MySqlConnection(consstring))
                 {
                     conn.Open();
-                    string query = "SELECT Subjects FROM subjectlist";
+                    string query = "SELECT Subject_Code FROM subjectlist";
                     MySqlCommand cmd = new MySqlCommand(query, conn);
                     using (MySqlDataReader reader = cmd.ExecuteReader())
                     {

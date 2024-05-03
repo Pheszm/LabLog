@@ -22,7 +22,7 @@ namespace LabLog.Forms
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            if (AddSubjectBox.Text == "")
+            if (AddSubjectBox.Text == "" || Titleee.Text == "")
             {
                 MessageBox.Show("Please Fill-Up the Box.", "Attention");
             }
@@ -40,9 +40,10 @@ namespace LabLog.Forms
                 using (MySqlConnection con = new MySqlConnection(consstring))
                 {
                     con.Open();
-                    string sql = "INSERT INTO subjectlist (subjects) VALUES (@Subjects)";
+                    string sql = "INSERT INTO subjectlist (Subject_Code, Subject_Title) VALUES (@Code, @Title)";
                     MySqlCommand cmd = new MySqlCommand(sql, con);
-                    cmd.Parameters.AddWithValue("@Subjects", AddSubjectBox.Text);
+                    cmd.Parameters.AddWithValue("@Code", AddSubjectBox.Text);
+                    cmd.Parameters.AddWithValue("@Title", Titleee.Text);
                     cmd.ExecuteNonQuery();
                 }
                 this.Close();
