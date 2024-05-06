@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LabLog.Properties
+namespace LABLOG.Properties
 {
 
 

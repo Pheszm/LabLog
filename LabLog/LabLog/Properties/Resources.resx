@@ -118,20 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="file-export" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\file-export.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Logout_Icon _White" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logout_Icon _White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Return_Logo_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Return_Logo_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LabLog_Header" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LabLog_Header.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="file-import" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\file-import.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Introduction_Wallaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Introduction_Wallaper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Download_Logo_Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Download_Logo_Black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Logout_Icon _White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logout_Icon _White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Add_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add_Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Subject_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Subject_Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,29 +145,14 @@
   <data name="Remove_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Remove_Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Edit_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Edit_Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="StudentsLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\StudentsLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Logout_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logout_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="file-export" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\file-export.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Home_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Home_Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Return_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Return_Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="View_Password_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\View_Password_Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Add_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Add_Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Return_Logo_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Return_Logo_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Settings_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Settings_Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,7 +160,7 @@
   <data name="UnView_Password_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\UnView_Password_Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Introduction_Wallaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Introduction_Wallaper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="View_Password_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\View_Password_Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

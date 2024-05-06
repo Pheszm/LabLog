@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{30B30B8D-0D20-4A13-9E01-11343D219181}</ProjectGuid>
+    <ProjectGuid>{5B85512C-9E28-4284-9D5F-9639EF7145DC}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>LabLog</RootNamespace>
-    <AssemblyName>LabLog</AssemblyName>
+    <RootNamespace>LABLOG</RootNamespace>
+    <AssemblyName>LABLOG</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -51,8 +51,8 @@
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data, Version=8.3.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.8.3.0\lib\net48\MySql.Data.dll</HintPath>
+    <Reference Include="MySql.Data, Version=8.4.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.4.0\lib\net48\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -98,136 +98,208 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\AddStudent.cs">
+    <Compile Include="Admin_Panels\Admin_Forms\Add_Instructor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AddStudent.Designer.cs">
-      <DependentUpon>AddStudent.cs</DependentUpon>
+    <Compile Include="Admin_Panels\Admin_Forms\Add_Instructor.Designer.cs">
+      <DependentUpon>Add_Instructor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\EditingStudent.cs">
+    <Compile Include="Admin_Panels\Admin_Forms\Update_Instructor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\EditingStudent.Designer.cs">
-      <DependentUpon>EditingStudent.cs</DependentUpon>
+    <Compile Include="Admin_Panels\Admin_Forms\Update_Instructor.Designer.cs">
+      <DependentUpon>Update_Instructor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SubjectAdd.cs">
+    <Compile Include="Admin_Panels\Archives.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Panels\Archives.Designer.cs">
+      <DependentUpon>Archives.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Panels\History.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Panels\History.Designer.cs">
+      <DependentUpon>History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Panels\Instructors_Accounts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Panels\Instructors_Accounts.Designer.cs">
+      <DependentUpon>Instructors_Accounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor_Panels\Course_List.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instructor_Panels\Course_List.Designer.cs">
+      <DependentUpon>Course_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor_Panels\Download_Reports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instructor_Panels\Download_Reports.Designer.cs">
+      <DependentUpon>Download_Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor_Panels\Instructor_Forms\Add_Course.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\SubjectAdd.Designer.cs">
-      <DependentUpon>SubjectAdd.cs</DependentUpon>
+    <Compile Include="Instructor_Panels\Instructor_Forms\Add_Course.Designer.cs">
+      <DependentUpon>Add_Course.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SubjectEditing.cs">
+    <Compile Include="Instructor_Panels\Instructor_Forms\Add_Student.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\SubjectEditing.Designer.cs">
-      <DependentUpon>SubjectEditing.cs</DependentUpon>
+    <Compile Include="Instructor_Panels\Instructor_Forms\Add_Student.Designer.cs">
+      <DependentUpon>Add_Student.cs</DependentUpon>
     </Compile>
-    <Compile Include="Panels\DownloadReportsPanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Panels\DownloadReportsPanel.Designer.cs">
-      <DependentUpon>DownloadReportsPanel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Panels\InstructorSignIn.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Panels\InstructorSignIn.Designer.cs">
-      <DependentUpon>InstructorSignIn.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Panels\InstructorsMenu.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Panels\InstructorsMenu.Designer.cs">
-      <DependentUpon>InstructorsMenu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Panels\IntroductionPanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Panels\IntroductionPanel.Designer.cs">
-      <DependentUpon>IntroductionPanel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Panels\LogbookAreaForStaff.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Panels\LogbookAreaForStaff.Designer.cs">
-      <DependentUpon>LogbookAreaForStaff.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Panels\LogbookAreaForStudent.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Panels\LogbookAreaForStudent.Designer.cs">
-      <DependentUpon>LogbookAreaForStudent.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Panels\StudentListPanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Panels\StudentListPanel.Designer.cs">
-      <DependentUpon>StudentListPanel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Panels\SubjectListPanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Panels\SubjectListPanel.Designer.cs">
-      <DependentUpon>SubjectListPanel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="TheMainForm.cs">
+    <Compile Include="Instructor_Panels\Instructor_Forms\Add_Subject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TheMainForm.Designer.cs">
-      <DependentUpon>TheMainForm.cs</DependentUpon>
+    <Compile Include="Instructor_Panels\Instructor_Forms\Add_Subject.Designer.cs">
+      <DependentUpon>Add_Subject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor_Panels\Instructor_Forms\Update_Course.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructor_Panels\Instructor_Forms\Update_Course.Designer.cs">
+      <DependentUpon>Update_Course.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor_Panels\Instructor_Forms\Update_Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructor_Panels\Instructor_Forms\Update_Student.Designer.cs">
+      <DependentUpon>Update_Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor_Panels\Instructor_Forms\Update_Subject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructor_Panels\Instructor_Forms\Update_Subject.Designer.cs">
+      <DependentUpon>Update_Subject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor_Panels\Student_List.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instructor_Panels\Student_List.Designer.cs">
+      <DependentUpon>Student_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor_Panels\Subject_List.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instructor_Panels\Subject_List.Designer.cs">
+      <DependentUpon>Subject_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logbook_Panels\TimeIn_Student.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Logbook_Panels\TimeIn_Student.Designer.cs">
+      <DependentUpon>TimeIn_Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Form.Designer.cs">
+      <DependentUpon>Main_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Admin_Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Admin_Home.Designer.cs">
+      <DependentUpon>Admin_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Instructor_Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Instructor_Home.Designer.cs">
+      <DependentUpon>Instructor_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Login_Instructor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Login_Instructor.Designer.cs">
+      <DependentUpon>Login_Instructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Start_Menu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Start_Menu.Designer.cs">
+      <DependentUpon>Start_Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TimerCode.cs" />
-    <EmbeddedResource Include="Forms\AddStudent.resx">
-      <DependentUpon>AddStudent.cs</DependentUpon>
+    <EmbeddedResource Include="Admin_Panels\Admin_Forms\Add_Instructor.resx">
+      <DependentUpon>Add_Instructor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\EditingStudent.resx">
-      <DependentUpon>EditingStudent.cs</DependentUpon>
+    <EmbeddedResource Include="Admin_Panels\Admin_Forms\Update_Instructor.resx">
+      <DependentUpon>Update_Instructor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SubjectAdd.resx">
-      <DependentUpon>SubjectAdd.cs</DependentUpon>
+    <EmbeddedResource Include="Admin_Panels\Archives.resx">
+      <DependentUpon>Archives.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SubjectEditing.resx">
-      <DependentUpon>SubjectEditing.cs</DependentUpon>
+    <EmbeddedResource Include="Admin_Panels\History.resx">
+      <DependentUpon>History.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Panels\DownloadReportsPanel.resx">
-      <DependentUpon>DownloadReportsPanel.cs</DependentUpon>
+    <EmbeddedResource Include="Admin_Panels\Instructors_Accounts.resx">
+      <DependentUpon>Instructors_Accounts.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Panels\InstructorSignIn.resx">
-      <DependentUpon>InstructorSignIn.cs</DependentUpon>
+    <EmbeddedResource Include="Instructor_Panels\Course_List.resx">
+      <DependentUpon>Course_List.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Panels\InstructorsMenu.resx">
-      <DependentUpon>InstructorsMenu.cs</DependentUpon>
+    <EmbeddedResource Include="Instructor_Panels\Download_Reports.resx">
+      <DependentUpon>Download_Reports.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Panels\IntroductionPanel.resx">
-      <DependentUpon>IntroductionPanel.cs</DependentUpon>
+    <EmbeddedResource Include="Instructor_Panels\Instructor_Forms\Add_Course.resx">
+      <DependentUpon>Add_Course.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Panels\LogbookAreaForStaff.resx">
-      <DependentUpon>LogbookAreaForStaff.cs</DependentUpon>
+    <EmbeddedResource Include="Instructor_Panels\Instructor_Forms\Add_Student.resx">
+      <DependentUpon>Add_Student.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Panels\LogbookAreaForStudent.resx">
-      <DependentUpon>LogbookAreaForStudent.cs</DependentUpon>
+    <EmbeddedResource Include="Instructor_Panels\Instructor_Forms\Add_Subject.resx">
+      <DependentUpon>Add_Subject.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Panels\StudentListPanel.resx">
-      <DependentUpon>StudentListPanel.cs</DependentUpon>
+    <EmbeddedResource Include="Instructor_Panels\Instructor_Forms\Update_Course.resx">
+      <DependentUpon>Update_Course.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Panels\SubjectListPanel.resx">
-      <DependentUpon>SubjectListPanel.cs</DependentUpon>
+    <EmbeddedResource Include="Instructor_Panels\Instructor_Forms\Update_Student.resx">
+      <DependentUpon>Update_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructor_Panels\Instructor_Forms\Update_Subject.resx">
+      <DependentUpon>Update_Subject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructor_Panels\Student_List.resx">
+      <DependentUpon>Student_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructor_Panels\Subject_List.resx">
+      <DependentUpon>Subject_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logbook_Panels\TimeIn_Student.resx">
+      <DependentUpon>TimeIn_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Form.resx">
+      <DependentUpon>Main_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Admin_Home.resx">
+      <DependentUpon>Admin_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Instructor_Home.resx">
+      <DependentUpon>Instructor_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Login_Instructor.resx">
+      <DependentUpon>Login_Instructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Start_Menu.resx">
+      <DependentUpon>Start_Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="TheMainForm.resx">
-      <DependentUpon>TheMainForm.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -243,43 +315,34 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Person_Logo.png" />
+    <None Include="Resources\LabLog_Header.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Settings_Logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\LabLog_Header.png" />
+    <None Include="Resources\Person_Logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Logout_Icon.png" />
+    <None Include="Resources\Introduction_Wallaper.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Return_Logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\UnView_Password_Logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\View_Password_Logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\StudentsLogo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Download_Logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Subject_Logo.png" />
+    <None Include="Resources\Return_Logo_White.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Home_Logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Logout_Icon _White.png" />
+    <None Include="Resources\StudentsLogo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Return_Logo_White.png" />
+    <None Include="Resources\Subject_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout_Icon _White.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Add_Logo.png" />
@@ -288,19 +351,14 @@
     <None Include="Resources\Remove_Logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Edit_Logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\file-import.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\file-export.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Download_Logo_Black.png" />
+    <None Include="Resources\UnView_Password_Logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Introduction_Wallaper.png" />
+    <None Include="Resources\View_Password_Logo.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

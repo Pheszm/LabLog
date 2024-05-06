@@ -1,14 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\DOSTX-Admin\\OneDrive - DOST-REGIONAL OFFICE X\\Desktop\\Carls Respo\\LabLog\\LabLog\\",
+  "WorkspaceRootPath": "C:\\Users\\DOSTX-Admin\\OneDrive - DOST-REGIONAL OFFICE X\\Desktop\\Carls Respo\\LabLog\\LABLOG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{30B30B8D-0D20-4A13-9E01-11343D219181}|LabLog\\LabLog.csproj|c:\\users\\dostx-admin\\onedrive - dost-regional office x\\desktop\\carls respo\\lablog\\lablog\\lablog\\panels\\instructorsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{30B30B8D-0D20-4A13-9E01-11343D219181}|LabLog\\LabLog.csproj|solutionrelative:lablog\\panels\\instructorsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{30B30B8D-0D20-4A13-9E01-11343D219181}|LabLog\\LabLog.csproj|c:\\users\\dostx-admin\\onedrive - dost-regional office x\\desktop\\carls respo\\lablog\\lablog\\lablog\\panels\\logbookareaforstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{30B30B8D-0D20-4A13-9E01-11343D219181}|LabLog\\LabLog.csproj|solutionrelative:lablog\\panels\\logbookareaforstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5B85512C-9E28-4284-9D5F-9639EF7145DC}|LABLOG\\LABLOG.csproj|c:\\users\\dostx-admin\\onedrive - dost-regional office x\\desktop\\carls respo\\lablog\\lablog\\lablog\\logbook_panels\\timein_student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B85512C-9E28-4284-9D5F-9639EF7145DC}|LABLOG\\LABLOG.csproj|solutionrelative:lablog\\logbook_panels\\timein_student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,25 +19,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "InstructorsMenu.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\DOSTX-Admin\\OneDrive - DOST-REGIONAL OFFICE X\\Desktop\\Carls Respo\\LabLog\\LabLog\\LabLog\\Panels\\InstructorsMenu.cs",
-              "RelativeDocumentMoniker": "LabLog\\Panels\\InstructorsMenu.cs",
-              "ToolTip": "C:\\Users\\DOSTX-Admin\\OneDrive - DOST-REGIONAL OFFICE X\\Desktop\\Carls Respo\\LabLog\\LabLog\\LabLog\\Panels\\InstructorsMenu.cs [Design]",
-              "RelativeToolTip": "LabLog\\Panels\\InstructorsMenu.cs [Design]",
+              "Title": "TimeIn_Student.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DOSTX-Admin\\OneDrive - DOST-REGIONAL OFFICE X\\Desktop\\Carls Respo\\LabLog\\LABLOG\\LABLOG\\Logbook_Panels\\TimeIn_Student.cs",
+              "RelativeDocumentMoniker": "LABLOG\\Logbook_Panels\\TimeIn_Student.cs",
+              "ToolTip": "C:\\Users\\DOSTX-Admin\\OneDrive - DOST-REGIONAL OFFICE X\\Desktop\\Carls Respo\\LabLog\\LABLOG\\LABLOG\\Logbook_Panels\\TimeIn_Student.cs [Design]",
+              "RelativeToolTip": "LABLOG\\Logbook_Panels\\TimeIn_Student.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T02:00:27.313Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LogbookAreaForStudent.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\DOSTX-Admin\\OneDrive - DOST-REGIONAL OFFICE X\\Desktop\\Carls Respo\\LabLog\\LabLog\\LabLog\\Panels\\LogbookAreaForStudent.cs",
-              "RelativeDocumentMoniker": "LabLog\\Panels\\LogbookAreaForStudent.cs",
-              "ToolTip": "C:\\Users\\DOSTX-Admin\\OneDrive - DOST-REGIONAL OFFICE X\\Desktop\\Carls Respo\\LabLog\\LabLog\\LabLog\\Panels\\LogbookAreaForStudent.cs [Design]",
-              "RelativeToolTip": "LabLog\\Panels\\LogbookAreaForStudent.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T12:45:49.188Z",
+              "WhenOpened": "2024-05-06T15:35:10.948Z",
               "EditorCaption": " [Design]"
             }
           ]

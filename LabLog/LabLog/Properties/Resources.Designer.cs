@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LabLog.Properties {
+namespace LABLOG.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace LabLog.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("LabLog.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("LABLOG.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -83,39 +83,9 @@ namespace LabLog.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Download_Logo_Black {
-            get {
-                object obj = ResourceManager.GetObject("Download_Logo_Black", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Edit_Logo {
-            get {
-                object obj = ResourceManager.GetObject("Edit_Logo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap file_export {
             get {
                 object obj = ResourceManager.GetObject("file-export", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap file_import {
-            get {
-                object obj = ResourceManager.GetObject("file-import", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,16 +123,6 @@ namespace LabLog.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Logout_Icon {
-            get {
-                object obj = ResourceManager.GetObject("Logout_Icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Logout_Icon__White {
             get {
                 object obj = ResourceManager.GetObject("Logout_Icon _White", resourceCulture);
@@ -186,16 +146,6 @@ namespace LabLog.Properties {
         internal static System.Drawing.Bitmap Remove_Logo {
             get {
                 object obj = ResourceManager.GetObject("Remove_Logo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Return_Logo {
-            get {
-                object obj = ResourceManager.GetObject("Return_Logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

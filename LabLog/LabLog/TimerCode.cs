@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Management;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LabLog
+namespace LABLOG
 {
     internal class TimerCode
     {
@@ -23,15 +22,15 @@ namespace LabLog
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-            if (!Program.LoggedIn)
+            if (!Program.Bool_Time_in)
             {
-                Program.Time -= 1; // Decrement time on each tick
+                Program.Time -= 1;
             }
 
             if (Program.Time <= 0)
             {
                 timer.Stop();
-                Shutdown(); 
+                Shutdown();
             }
         }
 

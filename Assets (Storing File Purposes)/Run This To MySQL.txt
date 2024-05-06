@@ -1,0 +1,95 @@
+create database lablog_database;
+
+use lablog_database;
+
+create table Instructors(
+ID varchar(100),
+Fullname varchar(100),
+Username varchar(100),
+Password varchar(100),
+Status varchar(100) default 0
+);
+
+CREATE TABLE Students (
+	Identifier INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    Fullname VARCHAR(100),
+    StudentID VARCHAR(100),
+    Course VARCHAR(100),
+	YearLevel VARCHAR(100),
+	Sex VARCHAR(100),
+	Status int NOT NULL default 0,
+    Archive_Status int NOT NULL default 0
+);
+
+CREATE TABLE Courses (
+    Identifier INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    Course VARCHAR(100),
+    Title VARCHAR(100),
+    Status int NOT NULL default 0,
+    Archive_Status int NOT NULL default 0
+);
+
+CREATE TABLE History (
+    Datetime VARCHAR(100),
+	Manage_By VARCHAR(100),
+    Manage VARCHAR(100),
+    Type VARCHAR(100),
+	Identifier INT
+);
+
+CREATE TABLE Archives (
+    Date_Removed VARCHAR(100),
+    Removed_By VARCHAR(100),
+    Type VARCHAR(100),
+	Identifier INT
+);
+
+create table System_Admin(
+Username varchar(100),
+Password varchar(100)
+);
+INSERT INTO System_Admin(Username, Password)
+VALUE ("123","123");
+
+
+CREATE TABLE Subjects (
+	Identifier INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    Course VARCHAR(100),
+	Code VARCHAR(100),
+    Title VARCHAR(250),
+    Status VARCHAR(100),
+    Archive_Status int NOT NULL default 0
+);
+
+Create table logbook(
+	IPaddress varchar(100),
+	Fullname varchar(100),
+	ID varchar(100),
+	Subject varchar(100),
+	Reason varchar(500) NOT NULL default "Class",
+	TimeIn varchar(100),
+	TimeOut varchar(100),
+	ExactDate varchar(100)
+);
+
+
+
+
+
+#HOW TO FIX THIS ERROR?
+MySql.Data.MySqlClient.MySqlException: 'Authentication to host 'localhost' for user 'root' using method 'mysql_native_password' failed with message: Access denied for user 'root'@'localhost' (using password: YES)'
+
+#Run This:
+SELECT user, host FROM mysql.user;
+
+ALTER USER 'root'@'localhost' IDENTIFIED BY '123456';
+
+
+
+#To give Access for Remoting the Database
+CREATE USER 'root'@'%' IDENTIFIED BY '123456';
+
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+
+FLUSH PRIVILEGES;
+
