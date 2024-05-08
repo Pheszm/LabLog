@@ -208,6 +208,7 @@
             this.CourseComboBox.Name = "CourseComboBox";
             this.CourseComboBox.Size = new System.Drawing.Size(139, 32);
             this.CourseComboBox.TabIndex = 59;
+            this.CourseComboBox.SelectedIndexChanged += new System.EventHandler(this.CourseComboBox_SelectedIndexChanged);
             // 
             // Statusbox
             // 
@@ -266,7 +267,7 @@
             this.Create_btn.Name = "Create_btn";
             this.Create_btn.Size = new System.Drawing.Size(126, 39);
             this.Create_btn.TabIndex = 57;
-            this.Create_btn.Text = "Save";
+            this.Create_btn.Text = "Add";
             this.Create_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Create_btn.UseVisualStyleBackColor = false;
             this.Create_btn.Click += new System.EventHandler(this.Create_btn_Click);

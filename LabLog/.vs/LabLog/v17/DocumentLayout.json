@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\DOSTX-Admin\\OneDrive - DOST-REGIONAL OFFICE X\\Desktop\\Carls Respo\\LabLog\\LABLOG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5B85512C-9E28-4284-9D5F-9639EF7145DC}|LABLOG\\LABLOG.csproj|c:\\users\\dostx-admin\\onedrive - dost-regional office x\\desktop\\carls respo\\lablog\\lablog\\lablog\\logbook_panels\\timein_student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5B85512C-9E28-4284-9D5F-9639EF7145DC}|LABLOG\\LABLOG.csproj|solutionrelative:lablog\\logbook_panels\\timein_student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5B85512C-9E28-4284-9D5F-9639EF7145DC}|LABLOG\\LABLOG.csproj|c:\\users\\dostx-admin\\onedrive - dost-regional office x\\desktop\\carls respo\\lablog\\lablog\\lablog\\main_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B85512C-9E28-4284-9D5F-9639EF7145DC}|LABLOG\\LABLOG.csproj|solutionrelative:lablog\\main_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,13 +19,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TimeIn_Student.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\DOSTX-Admin\\OneDrive - DOST-REGIONAL OFFICE X\\Desktop\\Carls Respo\\LabLog\\LABLOG\\LABLOG\\Logbook_Panels\\TimeIn_Student.cs",
-              "RelativeDocumentMoniker": "LABLOG\\Logbook_Panels\\TimeIn_Student.cs",
-              "ToolTip": "C:\\Users\\DOSTX-Admin\\OneDrive - DOST-REGIONAL OFFICE X\\Desktop\\Carls Respo\\LabLog\\LABLOG\\LABLOG\\Logbook_Panels\\TimeIn_Student.cs [Design]",
-              "RelativeToolTip": "LABLOG\\Logbook_Panels\\TimeIn_Student.cs [Design]",
+              "Title": "Main_Form.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DOSTX-Admin\\OneDrive - DOST-REGIONAL OFFICE X\\Desktop\\Carls Respo\\LabLog\\LABLOG\\LABLOG\\Main_Form.cs",
+              "RelativeDocumentMoniker": "LABLOG\\Main_Form.cs",
+              "ToolTip": "C:\\Users\\DOSTX-Admin\\OneDrive - DOST-REGIONAL OFFICE X\\Desktop\\Carls Respo\\LabLog\\LABLOG\\LABLOG\\Main_Form.cs [Design]",
+              "RelativeToolTip": "LABLOG\\Main_Form.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T15:35:10.948Z",
+              "WhenOpened": "2024-05-08T14:45:51.433Z",
               "EditorCaption": " [Design]"
             }
           ]

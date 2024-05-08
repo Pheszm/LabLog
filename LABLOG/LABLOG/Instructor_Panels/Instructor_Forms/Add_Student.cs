@@ -85,7 +85,7 @@ namespace LABLOG.Instructor_Panels.Instructor_Forms
                     string sql = "INSERT INTO students (Fullname, StudentID, Course, YearLevel, Sex, Status, Archive_Status) VALUES (@Fullname, @StudentID, @Course, @YearLevel, @Sex, @Status, @Archive_Status)";
                     MySqlCommand cmd = new MySqlCommand(sql, con);
                     cmd.Parameters.AddWithValue("@Fullname", Fullnamebox.Text);
-                    cmd.Parameters.AddWithValue("@StudentID", Idbox.Text);
+                    cmd.Parameters.AddWithValue("@StudentID", Idbox.Text.ToUpper());
                     cmd.Parameters.AddWithValue("@Course", CourseComboBox.Text);
                     cmd.Parameters.AddWithValue("@YearLevel", yearlevelbox.Text);
                     cmd.Parameters.AddWithValue("@Sex", sexbox.Text);
@@ -145,6 +145,11 @@ namespace LABLOG.Instructor_Panels.Instructor_Forms
                 }
                 addToHistory();
             }
+        }
+
+        private void CourseComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

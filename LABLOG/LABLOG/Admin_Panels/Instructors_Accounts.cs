@@ -235,7 +235,7 @@ namespace LABLOG.Admin_Panels
                     using (MySqlConnection con = new MySqlConnection(consstring))
                     {
                         con.Open();
-                        string sql = "DELETE FROM instructors WHERE ID = @Stored_ID";
+                        string sql = "DELETE FROM instructors WHERE ID = @ID";
                         MySqlCommand cmd = new MySqlCommand(sql, con);
                         cmd.Parameters.AddWithValue("@ID", Stored_ID);
                         cmd.ExecuteNonQuery();
