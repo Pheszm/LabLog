@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B85512C-9E28-4284-9D5F-9639EF7145DC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LABLOG</RootNamespace>
+    <AssemblyName>LABLOG</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.2.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.25.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.25.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.3.5.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.3.5\lib\net462\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.3.5.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.3.5\lib\net462\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.8.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.8\lib\net462\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.4.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.4.0\lib\net48\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.4.4.1\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=7.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.7.0.2\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipelines, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.5.0.2\lib\net461\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZstdSharp, Version=0.7.1.0, Culture=neutral, PublicKeyToken=8d151af33a4ad5cf, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZstdSharp.Port.0.7.1\lib\net461\ZstdSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_Panels\Admin_Forms\Add_Instructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Panels\Admin_Forms\Add_Instructor.Designer.cs">
+      <DependentUpon>Add_Instructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Panels\Admin_Forms\Update_Instructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Panels\Admin_Forms\Update_Instructor.Designer.cs">
+      <DependentUpon>Update_Instructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Panels\Archives.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Panels\Archives.Designer.cs">
+      <DependentUpon>Archives.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Panels\History.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Panels\History.Designer.cs">
+      <DependentUpon>History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Panels\Instructors_Accounts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Panels\Instructors_Accounts.Designer.cs">
+      <DependentUpon>Instructors_Accounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor_Panels\Course_List.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instructor_Panels\Course_List.Designer.cs">
+      <DependentUpon>Course_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor_Panels\Download_Reports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instructor_Panels\Download_Reports.Designer.cs">
+      <DependentUpon>Download_Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor_Panels\Instructor_Forms\Add_Course.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructor_Panels\Instructor_Forms\Add_Course.Designer.cs">
+      <DependentUpon>Add_Course.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor_Panels\Instructor_Forms\Add_Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructor_Panels\Instructor_Forms\Add_Student.Designer.cs">
+      <DependentUpon>Add_Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor_Panels\Instructor_Forms\Add_Subject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructor_Panels\Instructor_Forms\Add_Subject.Designer.cs">
+      <DependentUpon>Add_Subject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor_Panels\Instructor_Forms\Update_Course.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructor_Panels\Instructor_Forms\Update_Course.Designer.cs">
+      <DependentUpon>Update_Course.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor_Panels\Instructor_Forms\Update_Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructor_Panels\Instructor_Forms\Update_Student.Designer.cs">
+      <DependentUpon>Update_Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor_Panels\Instructor_Forms\Update_Subject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructor_Panels\Instructor_Forms\Update_Subject.Designer.cs">
+      <DependentUpon>Update_Subject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor_Panels\Student_List.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instructor_Panels\Student_List.Designer.cs">
+      <DependentUpon>Student_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor_Panels\Subject_List.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instructor_Panels\Subject_List.Designer.cs">
+      <DependentUpon>Subject_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logbook_Panels\TimeIn_Student.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Logbook_Panels\TimeIn_Student.Designer.cs">
+      <DependentUpon>TimeIn_Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Form.Designer.cs">
+      <DependentUpon>Main_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Admin_Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Admin_Home.Designer.cs">
+      <DependentUpon>Admin_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Instructor_Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Instructor_Home.Designer.cs">
+      <DependentUpon>Instructor_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Login_Instructor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Login_Instructor.Designer.cs">
+      <DependentUpon>Login_Instructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Start_Menu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Start_Menu.Designer.cs">
+      <DependentUpon>Start_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TimerCode.cs" />
+    <EmbeddedResource Include="Admin_Panels\Admin_Forms\Add_Instructor.resx">
+      <DependentUpon>Add_Instructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Panels\Admin_Forms\Update_Instructor.resx">
+      <DependentUpon>Update_Instructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Panels\Archives.resx">
+      <DependentUpon>Archives.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Panels\History.resx">
+      <DependentUpon>History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Panels\Instructors_Accounts.resx">
+      <DependentUpon>Instructors_Accounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructor_Panels\Course_List.resx">
+      <DependentUpon>Course_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructor_Panels\Download_Reports.resx">
+      <DependentUpon>Download_Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructor_Panels\Instructor_Forms\Add_Course.resx">
+      <DependentUpon>Add_Course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructor_Panels\Instructor_Forms\Add_Student.resx">
+      <DependentUpon>Add_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructor_Panels\Instructor_Forms\Add_Subject.resx">
+      <DependentUpon>Add_Subject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructor_Panels\Instructor_Forms\Update_Course.resx">
+      <DependentUpon>Update_Course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructor_Panels\Instructor_Forms\Update_Student.resx">
+      <DependentUpon>Update_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructor_Panels\Instructor_Forms\Update_Subject.resx">
+      <DependentUpon>Update_Subject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructor_Panels\Student_List.resx">
+      <DependentUpon>Student_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructor_Panels\Subject_List.resx">
+      <DependentUpon>Subject_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logbook_Panels\TimeIn_Student.resx">
+      <DependentUpon>TimeIn_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Form.resx">
+      <DependentUpon>Main_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Admin_Home.resx">
+      <DependentUpon>Admin_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Instructor_Home.resx">
+      <DependentUpon>Instructor_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Login_Instructor.resx">
+      <DependentUpon>Login_Instructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Start_Menu.resx">
+      <DependentUpon>Start_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LabLog_Header.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Person_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Introduction_Wallaper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Return_Logo_White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StudentsLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Subject_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout_Icon _White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Remove_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file-export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UnView_Password_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\View_Password_Logo.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
