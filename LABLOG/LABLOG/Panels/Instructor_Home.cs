@@ -16,7 +16,7 @@ namespace LABLOG.Panels
         {
             InitializeComponent();
             LoopFunction();
-            label1.Text = $"Hello {Program.Instruc_Name}!";
+            label1.Text = $"Hello, {Program.Instruc_Name}!";
         }
         private void LoopFunction()
         {

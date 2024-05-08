@@ -96,7 +96,7 @@ namespace LABLOG.Panels
                                     if (reader1.Read())
                                     {
                                         Program.Instruc_Name = reader1.GetString(1);
-                                        MessageBox.Show($"You are logged-in as SYSTEM ADMIN", "Login Successful");
+                                        MessageBox.Show($"YOU HAVE BEEN ACCESSED THE SYSTEM ADMIN", "Login Successful");
 
                                         Panels.Admin_Home login = new Panels.Admin_Home();
                                         this.Controls.Clear();

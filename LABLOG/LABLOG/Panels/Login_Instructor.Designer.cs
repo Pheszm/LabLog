@@ -48,16 +48,16 @@
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(76)))), ((int)(((byte)(107)))));
-            this.label4.Location = new System.Drawing.Point(432, 277);
+            this.label4.Location = new System.Drawing.Point(403, 283);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(373, 20);
+            this.label4.Size = new System.Drawing.Size(462, 31);
             this.label4.TabIndex = 29;
-            this.label4.Text = "Only instructors have designated accounts.";
+            this.label4.Text = "Instructors have designated accounts.";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
@@ -81,7 +81,7 @@
             this.LoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.LoginButton.ForeColor = System.Drawing.Color.Black;
             this.LoginButton.Image = global::LABLOG.Properties.Resources.Person_Logo;
-            this.LoginButton.Location = new System.Drawing.Point(574, 202);
+            this.LoginButton.Location = new System.Drawing.Point(551, 205);
             this.LoginButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LoginButton.Name = "LoginButton";
             this.LoginButton.Size = new System.Drawing.Size(167, 50);
@@ -204,12 +204,12 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(263, 112);
+            this.label3.Location = new System.Drawing.Point(256, 124);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(420, 68);
+            this.label3.Size = new System.Drawing.Size(450, 68);
             this.label3.TabIndex = 31;
-            this.label3.Text = "INSTRUCTOR";
+            this.label3.Text = "Authentication";
             // 
             // Return_btn
             // 
@@ -244,7 +244,6 @@
             this.Size = new System.Drawing.Size(945, 712);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
