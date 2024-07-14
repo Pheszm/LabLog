@@ -72,6 +72,7 @@ namespace LABLOG.Panels
 
                                 Panels.Instructor_Home login = new Panels.Instructor_Home();
                                 this.Controls.Clear();
+                                TimerCode.timer.Stop();
                                 this.Controls.Add(login);
                             }
                             else
@@ -100,6 +101,7 @@ namespace LABLOG.Panels
 
                                         Panels.Admin_Home login = new Panels.Admin_Home();
                                         this.Controls.Clear();
+                                        TimerCode.timer.Stop();
                                         this.Controls.Add(login);
                                     }
                                     else

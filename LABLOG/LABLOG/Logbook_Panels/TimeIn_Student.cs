@@ -196,7 +196,7 @@ namespace LABLOG.Logbook_Panels
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            if (Idbox.Text != "" && Subjectbox.Text != "Others")
+            if (Idbox.Text != "" && Subjectbox.Text != "Others" && Subjectbox.Text != "")
             {
                 LogtheData();
             }

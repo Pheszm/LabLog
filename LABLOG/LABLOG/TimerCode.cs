@@ -10,11 +10,9 @@ namespace LABLOG
 {
     internal class TimerCode
     {
-        private Timer timer;
-
+        public static Timer timer = new Timer();
         public void StartTimer()
         {
-            timer = new Timer();
             timer.Interval = 1000;
             timer.Tick += Timer_Tick;
             timer.Start();

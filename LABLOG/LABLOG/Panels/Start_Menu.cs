@@ -18,6 +18,7 @@ namespace LABLOG.Panels
             InitializeComponent();
             LoopFunction();
             AlreadyLogin();
+            TimerCode.timer.Start();
         }
         void AlreadyLogin()
         {

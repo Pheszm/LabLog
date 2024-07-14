@@ -339,6 +339,7 @@
             // 
             // DataGridView1
             // 
+            this.DataGridView1.AllowUserToAddRows = false;
             this.DataGridView1.AllowUserToResizeRows = false;
             this.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGridView1.BackgroundColor = System.Drawing.Color.White;

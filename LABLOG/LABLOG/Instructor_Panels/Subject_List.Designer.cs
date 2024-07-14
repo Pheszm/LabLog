@@ -214,6 +214,7 @@
             // 
             // DataGrid
             // 
+            this.DataGrid.AllowUserToAddRows = false;
             this.DataGrid.AllowUserToResizeRows = false;
             this.DataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGrid.BackgroundColor = System.Drawing.Color.White;
