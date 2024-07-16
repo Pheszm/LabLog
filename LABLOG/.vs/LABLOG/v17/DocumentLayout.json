@@ -7,10 +7,6 @@
       "RelativeMoniker": "D:0:0:{5B85512C-9E28-4284-9D5F-9639EF7145DC}|LABLOG\\LABLOG.csproj|solutionrelative:lablog\\panels\\start_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B85512C-9E28-4284-9D5F-9639EF7145DC}|LABLOG\\LABLOG.csproj|d:\\carl repository\\lablog\\lablog\\lablog\\timercode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B85512C-9E28-4284-9D5F-9639EF7145DC}|LABLOG\\LABLOG.csproj|solutionrelative:lablog\\timercode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5B85512C-9E28-4284-9D5F-9639EF7145DC}|LABLOG\\LABLOG.csproj|d:\\carl repository\\lablog\\lablog\\lablog\\panels\\start_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B85512C-9E28-4284-9D5F-9639EF7145DC}|LABLOG\\LABLOG.csproj|solutionrelative:lablog\\panels\\start_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -26,15 +22,15 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Start_Menu.cs",
               "DocumentMoniker": "D:\\CARL REPOSITORY\\LabLog\\LABLOG\\LABLOG\\Panels\\Start_Menu.cs",
               "RelativeDocumentMoniker": "LABLOG\\Panels\\Start_Menu.cs",
               "ToolTip": "D:\\CARL REPOSITORY\\LabLog\\LABLOG\\LABLOG\\Panels\\Start_Menu.cs",
               "RelativeToolTip": "LABLOG\\Panels\\Start_Menu.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABQAAAAMAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAgwC8AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T13:11:16.225Z",
+              "WhenOpened": "2024-07-16T11:53:56.962Z",
               "EditorCaption": ""
             },
             {
@@ -46,21 +42,8 @@
               "ToolTip": "D:\\CARL REPOSITORY\\LabLog\\LABLOG\\LABLOG\\Panels\\Start_Menu.cs [Design]",
               "RelativeToolTip": "LABLOG\\Panels\\Start_Menu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T13:11:14.606Z",
+              "WhenOpened": "2024-07-16T11:53:54.426Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TimerCode.cs",
-              "DocumentMoniker": "D:\\CARL REPOSITORY\\LabLog\\LABLOG\\LABLOG\\TimerCode.cs",
-              "RelativeDocumentMoniker": "LABLOG\\TimerCode.cs",
-              "ToolTip": "D:\\CARL REPOSITORY\\LabLog\\LABLOG\\LABLOG\\TimerCode.cs",
-              "RelativeToolTip": "LABLOG\\TimerCode.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T13:06:24.824Z",
-              "EditorCaption": ""
             }
           ]
         }

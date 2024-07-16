@@ -101,7 +101,7 @@ namespace LABLOG.Instructor_Panels
 
                 if (!string.IsNullOrEmpty(SearchBox.Text))
                 {
-                    sql += $" WHERE Title LIKE '%{SearchBox.Text}%'";
+                    sql += $" WHERE Title LIKE '%{SearchBox.Text}%' OR Course LIKE '%{SearchBox.Text}%' OR Code LIKE '%{SearchBox.Text}%' OR Status LIKE '%{SearchBox.Text}%'";
                 }
 
                 List<string[]> rowData = new List<string[]>(); // Store rows data
